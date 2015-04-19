@@ -2,14 +2,18 @@
 /*================= BOOTSTRAP OVERIDE ======================*/
 /*==========================================================*/
 
+#site-header .navbar {
+    margin-bottom: 20px;
+}
+
+#site-header .navbar-default {
+    border-color: transparent;
+    background: transparent;
+}
 
 /*==========================================================*/
 /*===================== GENERAL LAYOUT =====================*/
 /*==========================================================*/
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
 
 a {
   color: #00B7FF;
@@ -20,7 +24,12 @@ a {
 /*========================= BODY ===========================*/
 /*==========================================================*/
 
+body {
+    padding: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 
+    background-image:url(../images/site_background.jpg);
+}
 
 
 /*==========================================================*/
