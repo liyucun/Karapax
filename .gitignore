@@ -28,7 +28,7 @@ build/Release
 node_modules
 
 # Webstorm .idea
-karapax/.idea/workspace.xml
+.idea/workspace.xml
 .idea/tasks.xml
 .idea/dictionaries
 
