@@ -28,9 +28,8 @@ build/Release
 node_modules
 
 # Webstorm .idea
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/dictionaries
+workspace.xml
+tasks.xml
 
 .DS_Store
 *.DS_Store
