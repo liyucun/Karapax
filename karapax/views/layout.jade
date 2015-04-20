@@ -5,12 +5,15 @@ html
         meta(name='description', content='Karapax provide the best concierge service for you')
 
         title= title
-        link(rel='stylesheet', href='/stylesheets/style.css')
-        link(rel='stylesheet', href='./stylesheets/footer_style.css')
         link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+
+        link(rel='stylesheet', href='/stylesheets/style.css')
+
+
 
     body
         include navbar
+        block content
         include footer
     script( src='/bower_components/jquery/dist/jquery.min.js' )
     script( src='/bower_components/bootstrap/dist/js/bootstrap.min.js' )

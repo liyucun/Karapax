@@ -2,10 +2,6 @@
 /*================= BOOTSTRAP OVERIDE ======================*/
 /*==========================================================*/
 
-#site-header .navbar {
-    margin-bottom: 20px;
-}
-
 #site-header .navbar-default {
     border-color: transparent;
     background: transparent;
@@ -47,6 +43,7 @@ body {
 
 #gap {
     background-color:rgba(0,0,0,0.5);
+    height: 200px;
 }
 
 /*==========================================================*/
@@ -55,6 +52,7 @@ body {
 
 #about {
     background-color:#fff;
+    height: 200px;
 }
 
 /*==========================================================*/
