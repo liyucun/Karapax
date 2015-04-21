@@ -6,14 +6,12 @@ html
 
         title= title
         link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
-
         link(rel='stylesheet', href='/stylesheets/style.css')
 
 
-
     body
-        include navbar
+        include includes/navbar
         block content
-        include footer
+        include includes/footer
     script( src='/bower_components/jquery/dist/jquery.min.js' )
     script( src='/bower_components/bootstrap/dist/js/bootstrap.min.js' )
