@@ -5,6 +5,32 @@ block content
         
     section#apartments
         .container
+            .row
+                .col-lg-8.col-lg-offset-2.apartments-section-heading
+                    h2 我们的公寓
+            .row
+                .col-md-4.col-sm-6
+                    img.img-responsive(src='images/bedroom.jpg', alt='')
+                    h5 apartment 1
+                .col-md-4.col-sm-6
+                    img.img-responsive(src='images/bedroom.jpg', alt='')
+                    h5 apartment 2
+                .col-md-4.col-sm-6
+                    img.img-responsive(src='images/bedroom.jpg', alt='')
+                    h5 apartment 3
+                .col-md-4.col-sm-6
+                    img.img-responsive(src='images/bedroom.jpg', alt='')
+                    h5 apartment 4
+                .col-md-4.col-sm-6
+                    img.img-responsive(src='images/bedroom.jpg', alt='')
+                    h5 apartment 5
+                .col-md-4.col-sm-6
+                    img.img-responsive(src='images/bedroom.jpg', alt='')
+                    h5 apartment 6
+    #apartment-pic-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='apartment-pic-ModalLabel', aria-hidden='true')
+        .modal-dialog
+            .modal-body
+                img.img-responsive#apartments-img(src='', alt="image")
 
     section#gap
         .container
@@ -14,4 +40,5 @@ block content
 
     section#about
         .container
-
+            .row
+                h4 About Us

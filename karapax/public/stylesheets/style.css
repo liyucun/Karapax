@@ -23,9 +23,6 @@ a {
 body {
     padding: 0;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-
-    background: url(../images/site_background.jpg) no-repeat;
-    background-size: cover;
 }
 
 /*==========================================================*/
@@ -33,13 +30,17 @@ body {
 /*==========================================================*/
 
 header {
-    width: 100%;
-    height: auto;
-    background: url(../images/site_background.jpg) no-repeat bottom center scroll;
+    min-height: 600px;
+    padding: 100px 0;
+    background: url(../images/site_background.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+header h1 {
+    color: #ffffff;
 }
 
 /*==========================================================*/
@@ -48,7 +49,20 @@ header {
 
 #apartments {
     background-color:#fff;
-    height: 300px;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+
+#apartments .apartments-section-heading {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#apartments h5 {
+    text-align: center;
+    padding: 1em;
 }
 
 /*==========================================================*/
@@ -56,8 +70,10 @@ header {
 /*==========================================================*/
 
 #gap {
-    background-color:rgba(0,0,0,0.5);
+    background-color:#2D3037;
     height: 200px;
+    text-align: center;
+    color: #ffffff;
 }
 
 /*==========================================================*/
@@ -67,6 +83,10 @@ header {
 #about {
     background-color:#fff;
     height: 200px;
+}
+
+#about h4 {
+    text-align: center;
 }
 
 /*==========================================================*/
