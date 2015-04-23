@@ -41,7 +41,25 @@ header {
 
 header h1 {
     color: #ffffff;
-    text-align: center;
+}
+
+header .btn {
+    background-color: transparent;
+
+    border-radius: 5px / 4px;
+    -moz-border-radius: 5px / 4px;
+    -webkit-border-radius: 5px / 4px;
+
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+header .btn:hover {
+    color: #000000;
+
+    -moz-box-shadow: 0 0 2px #ccc;
+    -webkit-box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc;
 }
 
 /*==========================================================*/
