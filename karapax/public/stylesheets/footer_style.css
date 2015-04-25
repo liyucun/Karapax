@@ -1,57 +1,10 @@
-.footer{
-    background-color: black;
-    color: white;
-}
-.container{
-    margin: 0 50px 10px 50px;
-    padding:30px 50px 10px 50px;
-}
-/*.show-sm{display:none !important}
-
-@media (max-width: 992px){
-  .show-sm{display:block !important}
-  .hide-sm{display:none !important}
-}*/
-
-.div-colum{
-    padding:0 50px 10px 50px;
+#footer{
+    background-color: #2D3037;
+    color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.list-layout{
-    padding-left:0;
-    list-style:none;
-    margin-bottom:0
-}
-
-.div-top{
-    float:top;
-}
-.div-bottom{
-    float:bottom;
-}
-
-.div-social{
-    padding-left: 15px;
-}
-.social{
-    background-repeat:no-repeat;
-    padding-left:28px;
-    background-position:left center;
-    display:block;
-    line-height:20px;
-    margin-bottom:15px;
-    margin-right:45px;
-    background-size:20px 20px
-}
-.social-facebook{
-    background-image:url("//assets.edmodo.com/images_v2/marketing/social-facebook.png")
-}
-.social-twitter{
-    background-image:url("//assets.edmodo.com/images_v2/marketing/social-twitter.png")
-}
-.social-google{
-    background-image:url("//assets.edmodo.com/images_v2/marketing/social-google.png")
-}
-.social-pinterest {
-    background-image: url("//assets.edmodo.com/images_v2/marketing/social-pinterest.png")
+#footer a{
+    color: #ffffff;
 }
