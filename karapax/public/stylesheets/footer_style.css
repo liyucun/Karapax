@@ -8,3 +8,22 @@
 #footer a{
     color: #ffffff;
 }
+#footer a:hover{
+    color: #dca7a7;
+}
+
+.address{
+    color: #dca7a7;
+}
+
+.social{
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+i{
+    margin-top: 4px;
+    margin-right: 5px;
+    width: 16px;
+}
