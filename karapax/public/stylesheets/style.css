@@ -5,10 +5,14 @@
 #site-header .navbar-default {
     border-color: transparent;
     background: transparent;
+    padding: 10px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
 }
 
 #site-header .top-nav-collapse{
     background-color: #222222;
+    padding: 0;
 }
 
 /*==========================================================*/
