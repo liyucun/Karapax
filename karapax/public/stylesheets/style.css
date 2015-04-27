@@ -11,7 +11,7 @@
 }
 
 #site-header .top-nav-collapse{
-    background-color: #222222;
+    background-color: #2D3037;
     padding: 0;
 }
 
@@ -87,11 +87,6 @@ header .btn:hover {
     padding-bottom: 30px;
 }
 
-#apartments h5 {
-    text-align: center;
-    padding: 1em;
-}
-
 #apartments img:hover {
     color: #ffffff;
     opacity:0.6;
@@ -122,8 +117,27 @@ header .btn:hover {
     height: 200px;
 }
 
-#about h2,h4,p {
+h2 h4 p#about  {
     text-align: center;
+}
+
+/*==========================================================*/
+/*======================== FOOTER ==========================*/
+/*==========================================================*/
+
+footer {
+    background-color: #2D3037;
+    color: #ffffff;
+    padding: 40px;
+}
+
+footer .fa {
+    width: 32px;
+    font-size: 14px;
+}
+
+footer li {
+    margin-bottom: 10px;
 }
 
 /*==========================================================*/

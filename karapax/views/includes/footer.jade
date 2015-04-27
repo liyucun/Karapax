@@ -1,39 +1,49 @@
 // Created by Mia on 2015-04-19.
 
-#footer
+footer
     .container
         .row
             .col-sm-4
-                img.img-responsive(src='images/bedroom.jpg' alt='')
+                img.img-responsive(src='images/karapax_logo.png', alt="image")
             .col-sm-4
                 h4 联系方式
-                .address
-                    p Sir George Williams Campus
-                    p 1455 De Maisonneuve Blvd. W.
-                    p Montreal, Quebec, Canada
-                    p H3G 1M8
-                p tel. 514-xxx-xxxx
-                p email karapaxxxxxxxx
+                p.adr.clearfix
+                    i.fa.fa-map-marker.pull-left
+                    span.adr-group.pull-left
+                        span.street-address 2150 St.Mackay
+                        br
+                        span.region Montreal, Quebec
+                        br
+                        span.postal-code H3G 2M2
+                        br
+                        span.country-name Cananda
+                p.tel
+                    i.fa.fa-phone
+                    | +1 514 430 8601
+                p.email
+                    i.fa.fa-envelope-o
+                    | karapax@karapax.com
+
             .col-sm-4
                 h4 关注我们
-                ul.social
-                    li.list-unstyled
-                        span
+                ul.list-unstyled
+                    li
+                        a(href='#')
                             i.fa.fa-wechat
-                        a(href='#') &nbsp;WeChat
-                    li.list-unstyled
-                        span
+                            | 微信
+                    li
+                        a(href='#')
                             i.fa.fa-weibo
-                        a(href='#') &nbsp;Weibo
-                    li.list-unstyled
-                        span
+                            | 微博
+                    li
+                        a(href='#')
                             i.fa.fa-facebook
-                        a(href='#') &nbsp;Facebook
-                    li.list-unstyled
-                        span
+                            | Facebook
+                    li
+                        a(href='#')
                             i.fa.fa-twitter
-                        a(href='#') &nbsp;Twitter
+                            | Twitter
         .row
             .col-md-12
                 hr
-                p Copyright © 2015 – Karapax
+                p.text-center Copyright © 2015 – Karapax
