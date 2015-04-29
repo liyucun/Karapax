@@ -1,0 +1,8 @@
+#career .header {
+    min-height: 400px;
+    background: url(../images/careers_header.jpg) no-repeat center;
+}
+
+#career .career-list{
+    margin: 50px 0;
+}
