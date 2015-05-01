@@ -6,9 +6,8 @@ html
 
         title= title
         link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
-        link(rel='stylesheet', href='/stylesheets/style.css')
         link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.min.css')
-        link(rel='stylesheet', href='/stylesheets/career.css')
+        block extraHeader
 
     body
         include includes/navbar
@@ -16,6 +15,4 @@ html
         include includes/footer
     script( src='/bower_components/jquery/dist/jquery.min.js' )
     script( src='/bower_components/bootstrap/dist/js/bootstrap.min.js' )
-    script( src='/bower_components/jquery.easing/js/jquery.easing.min.js')
-    script( src='/javascripts/apartment.js' )
-    script( src='/javascripts/navbar.js' )
+    block extraScript

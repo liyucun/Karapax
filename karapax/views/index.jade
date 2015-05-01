@@ -1,7 +1,15 @@
 extends layout
 
+block extraHeader
+    link(rel='stylesheet', href='/stylesheets/karapax_home.css')
+
 block content
-    include includes/header
+    header
+        .container
+            .row
+                .col-md-8.col-md-offset-2.text-center
+                    h1 欢迎回家
+                    a.btn.btn-default(href='#apartments') click
         
     section#apartments
         .container
@@ -47,3 +55,6 @@ block content
                 p.
                    asdjsld  fsdkfjsd sjdkflsja sfdakfsal
                    sadklfs dfs sd f sdf sd fa dfa  asdfasdadfa
+
+block extraScript
+    script( src='/javascripts/karapax.js' )
