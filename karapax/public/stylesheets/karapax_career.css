@@ -1,6 +1,11 @@
-#career header {
+header {
     min-height: 400px;
     background: url(../images/careers_header.jpg) no-repeat center;
+    padding: 100px 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 /*==========================================================*/
