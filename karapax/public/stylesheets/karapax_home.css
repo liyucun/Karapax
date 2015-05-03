@@ -30,7 +30,7 @@ header {
     -o-background-size: cover;
 }
 
-header h1 {
+header .title {
     color: #ffffff;
 }
 
@@ -97,11 +97,15 @@ header .btn:hover {
 
 #about {
     background-color:#fff;
-    height: 200px;
+
 }
 
-h2 h4 p#about  {
+/*h2 h4 p#about  {
     text-align: center;
+}*/
+
+#about .space{
+    padding: 10px 0;
 }
 
 /*==========================================================*/

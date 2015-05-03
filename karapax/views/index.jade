@@ -8,8 +8,9 @@ block content
         .container
             .row
                 .col-md-8.col-md-offset-2.text-center
-                    h1 欢迎回家
-                    a.btn.btn-default(href='#apartments') click
+                    h1.title 家，就在不远处
+                    p.title 多样化租房选择，便捷化租房体验，让寻房不再难
+                    a.btn.btn-default(href='#') How it works
         
     section#apartments
         .container
@@ -49,12 +50,23 @@ block content
 
     section#about
         .container
-            .row
-                h2 About Us
-                h4 We help you make better apartment service
-                p.
-                   asdjsld  fsdkfjsd sjdkflsja sfdakfsal
-                   sadklfs dfs sd f sdf sd fa dfa  asdfasdadfa
+            .row.space
+                .col-md-12
+                    h2 About Us
+            .row.space
+                .col-md-12
+                    p.
+                        成立于加拿大蒙特利尔，Karapax 是一个专属于海外游子的租房平台。
+                        无论你在国内还是国外，一切繁琐的租房程序由我们承担。以可靠的房源，多样的租房选择，人性化的网站，
+                        我们致力于为用户打造最便捷称心的租住体验。
+            .row.space
+                .col-md-12
+                    p 我们承诺：
+                    ul.list-unstyled
+                        li 安心：以万分承诺，慎选房源，免除你的后顾之忧。
+                        li 精心：以千条标准，精挑细选，找到你心目中的家。
+                        li 省心：从找房到入住，你的工作，我们完成。
+                        li 称心：地点？环境？家具？设施？你的需求，我们满足。
 
 block extraScript
     script( src='/javascripts/karapax.js' )
