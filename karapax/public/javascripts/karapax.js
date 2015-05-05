@@ -19,4 +19,20 @@ $(window).scroll(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+
+    if(window.location.pathname != "/career"){
+        if($(window).scrollTop() > $("#how-it-works").height()){
+            if(!$("#how-it-works").hasClass("hide")){
+                $(window).scrollTop(0);
+            }
+            $("#how-it-works").addClass("hide");
+        }
+    }
+
 });
+
+$("#how-it-works-btn").click(function(){
+    $("#how-it-works").removeClass("hide");
+})
+
+
