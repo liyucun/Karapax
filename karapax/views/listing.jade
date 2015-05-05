@@ -1,0 +1,76 @@
+//
+   Created by Mia on 2015-05-04.
+
+extends layout
+
+block extraHeader
+   link(rel='stylesheet', href='/stylesheets/karapax_listing.css')
+
+block content
+   section#apt-info
+      .container
+         .row
+            .col-lg-8
+               .row
+                  .col-sm-6
+                     h4.title Address : 2150 St.Mackay
+                  .col-sm-6.title
+                     a(data-toggle='popover', data-placement='bottom' data-content='You can use this apartment by remembering this ID number!') Product ID: #WDFWE2347698
+               .row
+                  .col-md-9
+                     #listing-carousel.carousel.slide(data-ride='carousel')
+                        ol.carousel-indicators
+                           li(data-target='listing-carousel', data-slide-to='0').active
+                           li(data-target='listing-carousel', data-slide-to='1')
+                           li(data-target='listing-carousel', data-slide-to='2')
+                        .carousel-inner(role='listbox')
+                           .item.active
+                              img(src='images/bedroom.jpg', alt='Bedroom')
+                           .item
+                              img(src='images/kitchen.jpg', alt='kitchen')
+                           .item
+                              img(src='images/livingroom.jpg', alt='livingroom')
+                        a.left.carousel-control(href='#listing-carousel', role='button', data-slide='prev')
+                           span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                           span.sr-only Previous
+                        a.right.carousel-control(href='#listing-carousel', role='button', data-slide='next')
+                           span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                           span.sr-only Next
+               .row.text-center
+                  hr
+                  .col-sm-4
+                     i.fa.fa-bed.fa-3x
+                     p bedrooms
+                  .col-sm-4
+                     i.fa.fa-bed.fa-3x
+                     p bathrooms
+                  .col-sm-4
+                     i.fa.fa-calendar.fa-3x
+                     p avaliable
+               .row
+                  hr
+                  .col-lg-3.col-md-4.col-sm-4
+                     p Size
+                  .col-lg-3.col-md-4.col-sm-4
+                     p Deposit
+                  .col-lg-3.col-md-4.col-sm-4
+                     p Avability
+               .row
+                  hr
+                  .col-lg-9.col-md-12.col-sm-12
+                     p Description
+               .row
+                  hr
+                  .col-lg-9.col-md-12.col-sm-12
+                     p Amenities
+               .row
+                  hr
+                  .col-lg-9.col-md-12.col-sm-12
+                     p Furniture description
+               .row
+                  hr
+                  .col-lg-9.col-md-12.col-sm-12
+                     p Requirments
+            .col-lg-3.col-md-12.col-sm-12
+block extraScript
+   script( src='/javascripts/karapax.js' )
