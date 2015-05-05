@@ -9,4 +9,7 @@ router.get('/', function(req, res, next) {
 router.get('/career', function(req, res, next) {
   res.render('career', { title: 'Karapax'});
 });
+router.get('/listing', function(req, res, next) {
+  res.render('listing', { title: 'Karapax'});
+});
 module.exports = router;

@@ -20,7 +20,7 @@ $(window).scroll(function() {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 
-    if(window.location.pathname != "/career"){
+    if(window.location.pathname == "/"){
         if($(window).scrollTop() > $("#how-it-works").height()){
             if(!$("#how-it-works").hasClass("hide")){
                 $(window).scrollTop(0);
