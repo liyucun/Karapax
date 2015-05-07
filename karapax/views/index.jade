@@ -1,10 +1,18 @@
 extends layout
 
+// call the karapax_home.css
 block extraHeader
     link(rel='stylesheet', href='/stylesheets/karapax_home.css')
 
 
 block content
+
+
+    //div for the sign up
+    //div#sign-up.modal
+        div.modal-table
+            div.modal-cell
+                div.signup.modal-content wtf
 
 
     // div on the top of the screen, "how it works", the procedure of using website
@@ -16,7 +24,7 @@ block content
 
 
 
-
+    // header image
     header
         .container
             .row
@@ -26,6 +34,7 @@ block content
                     // link to the "how it works" div
                     a#how-it-works-btn.btn.btn-default(href='#') How it works
 
+    //apartment image list on home page
     section#apartments
         .container
             .row
@@ -33,40 +42,73 @@ block content
                     h2 我们的公寓
             .row
                 .col-md-4.col-sm-6
-                    img.img-responsive(src='images/bedroom.jpg', alt='')
-                    h5 apartment 1
-                .col-md-4.col-sm-6
-                    img.img-responsive(src='images/kitchen.jpg', alt='')
-                    h5 apartment 2
-                .col-md-4.col-sm-6
-                    img.img-responsive(src='images/livingroom.jpg', alt='')
-                    h5 apartment 3
-                .col-md-4.col-sm-6
-                    img.img-responsive(src='images/bedroom.jpg', alt='')
-                    h5 apartment 4
-                .col-md-4.col-sm-6
-                    img.img-responsive(src='images/bedroom.jpg', alt='')
-                    h5 apartment 5
-                .col-md-4.col-sm-6
-                    img.img-responsive(src='images/bedroom.jpg', alt='')
-                    h5 apartment 6
+                    .apt-image
+                        img.img-responsive(src='images/bedroom.jpg', alt='')
+                        .price-image
+                            span.h6.price-span-top $
+                            span.h4 1650
+                            span.h6.price-span-top CAD
 
+                .col-md-4.col-sm-6
+                    .apt-image
+                        img.img-responsive(src='images/kitchen.jpg', alt='')
+                        .price-image
+                            span.h6.price-span-top $
+                            span.h4 1650
+                            span.h6.price-span-top CAD
+
+                .col-md-4.col-sm-6
+                    .apt-image
+                        img.img-responsive(src='images/livingroom.jpg', alt='')
+                        .price-image
+                            span.h6.price-span-top $
+                            span.h4 1650
+                            span.h6.price-span-top CAD
+
+                .col-md-4.col-sm-6
+                    .apt-image
+                        img.img-responsive(src='images/bedroom.jpg', alt='')
+                        .price-image
+                            span.h6.price-span-top $
+                            span.h4 1650
+                            span.h6.price-span-top CAD
+
+                .col-md-4.col-sm-6
+                    .apt-image
+                        img.img-responsive(src='images/bedroom.jpg', alt='')
+                        .price-image
+                            span.h6.price-span-top $
+                            span.h4 1650
+                            span.h6.price-span-top CAD
+
+                .col-md-4.col-sm-6
+                    .apt-image
+                        img.img-responsive(src='images/bedroom.jpg', alt='')
+                        .price-image
+                            span.h6.price-span-top $
+                            span.h4 1650
+                            span.h6.price-span-top CAD
+
+
+    // controling the fade out animation when click on an image
     #apartment-pic-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='apartment-pic-ModalLabel', aria-hidden='true')
         .modal-dialog
             .modal-body
                 img.img-responsive#apartments-img(src='', alt="image")
 
+    //useless section
     section#gap
         .container
             .row
-                h1 Wellcome to our amazing Karapax!
+                h1 Welcome to our amazing Karapax!
                 h3 Vision
 
+    //About us section
     section#about
         .container
             .row.space
                 .col-md-12
-                    h2 About Us
+                    h2 关于我们
             .row.space
                 .col-md-12
                     p.
@@ -81,6 +123,6 @@ block content
                         li 精心：以千条标准，精挑细选，找到你心目中的家。
                         li 省心：从找房到入住，你的工作，我们完成。
                         li 称心：地点？环境？家具？设施？你的需求，我们满足。
-
+// load karapax js
 block extraScript
     script( src='/javascripts/karapax.js' )

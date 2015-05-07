@@ -1,16 +1,17 @@
 extends layout
-
+//load karapax_career.css
 block extraHeader
     link(rel='stylesheet', href='/stylesheets/karapax_career.css')
 
 block content
+    // header image, and text in title
     header
         .container
             .row
                 .col-md-8.col-md-offset-2.text-right
                     h3 加入我们，
                     h1 让家触手可及
-
+    // career list
     section#career
         .container
             .row
@@ -34,5 +35,6 @@ block content
                     ul
                         li XXXXXXXXXXXXXXXXXXXXXXXX
                         li XXXXXXXXXXXXXXXXXXXXXXXX
+//load karapax.js
 block extraScript
     script( src='/javascripts/karapax.js' )

@@ -12,27 +12,33 @@ $(window).load(function(){
     });
 });
 
-// navbar animation while scrolling
+
 $(window).scroll(function() {
+    // navbar animation while scrolling
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 
+    // "how it works" disappear
+    /*
     if(window.location.pathname == "/"){
         if($(window).scrollTop() > $("#how-it-works").height()){
             if(!$("#how-it-works").hasClass("hide")){
                 $(window).scrollTop(0);
+                $("#how-it-works").addClass("hide");
+
             }
-            $("#how-it-works").addClass("hide");
+
         }
     }
-
+    */
 });
-
+// "how it works" pop out
+/*
 $("#how-it-works-btn").click(function(){
     $("#how-it-works").removeClass("hide");
 })
-
+*/
 

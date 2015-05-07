@@ -44,7 +44,6 @@ header .btn {
 
 header .btn:hover {
     color: #000000;
-
     -moz-box-shadow: 0 0 2px #ccc;
     -webkit-box-shadow: 0 0 2px #ccc;
     box-shadow: 0 0 2px #ccc;
@@ -76,6 +75,26 @@ header .btn:hover {
     box-shadow: 0 0 10px #ccc;
 }
 
+
+
+#apartments .apt-image{
+    position:relative;
+    margin: 10px 0;
+}
+
+#apartments .price-image{
+    background-color: #565a5c;
+    color: white;
+    position:absolute;
+    left:0;
+    bottom: 0px;
+    padding: 7px 10px;
+}
+#apartments .price-span-top{
+    position: relative;
+    top: -0.5em;
+    padding: 2px;
+}
 /*==========================================================*/
 /*======================== GAP =============================*/
 /*==========================================================*/

@@ -1,5 +1,6 @@
 // Created by yucunli on 2015-04-19.
 
+// navigation bar, every page use this nav bar
 #site-header
     nav.navbar.navbar-default.navbar-fixed-top
         .container
@@ -9,9 +10,15 @@
                     span.icon-bar
                     span.icon-bar
                     span.icon-bar
+                // right content on nav bar
                 a.navbar-brand(href='./') #{title}
+            //left content on nav bar, device screen sensitive
             #navbar.navbar-collapse.collapse
                 ul.nav.navbar-nav.navbar-right
+                    //li
+                        a(href='./career') sign up
+                    //li
+                        a(href='./career') log in
                     li
                         a(href='./listing') 公寓
                     li
