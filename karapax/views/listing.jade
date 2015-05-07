@@ -11,7 +11,37 @@ block content
       .container
          .row
             .col-md-8.col-md-offset-2.text-center
-               a#gallery-btn.btn.btn-default(href='#') View Gallery
+               a#gallery-btn.btn.btn-default(href='#',data-toggle='modal', data-target='#apt-modal') View Gallery
+
+   #apt-modal.modal(role='dialog')
+      #apt-slides.carousel.slide(data-ride='carousel')
+         ol.carousel-indicators
+            li.active(data-target='#apt-slides', data-slide-to='0')
+            li(data-target='#apt-slides', data-slide-to='1')
+            li(data-target='#apt-slides', data-slide-to='2')
+            li(data-target='#apt-slides', data-slide-to='3')
+         .carousel-inner(role='listbox')
+            .item.active
+               img(src='images/bedroom.jpg',alt='')
+               .carousel-caption
+                  h3
+            .item
+               img(src='images/kitchen.jpg', alt='')
+               .carousel-caption
+                  h3
+                  p
+            .item
+               img(src='images/bedroom.jpg', alt='')
+               .carousel-caption
+                  h3
+                  p
+          a.left.carousel-control(href='#apt-slides', role='button', data-slide='prev')
+            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+          a.right.carousel-control(href='#apt-slides', role='button', data-slide='next')
+            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+            span.sr-only Next
+
    section#apt-info
       .container
          .row
