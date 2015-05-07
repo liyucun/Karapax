@@ -13,7 +13,7 @@
 #listing-header {
     min-height: 500px;
     padding: 150px 0;
-    background: url(../images/livingroom.jpg) no-repeat center;
+    background: url(../images/400sherbrooke1612br1.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -31,39 +31,107 @@
 /*==========================================================*/
 /*========================= APT-INFO =======================*/
 /*==========================================================*/
-#apt-info{
-    /*background-color: #d9edf7;
-    margin-top: 60px;*/
+#apt-info .row-space-4{
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-#apt-info .title{
-    margin-top: 40px;
-    margin-bottom: 20px;
+#apt-info .inline-space-3{
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
-#apt-info .col-sm-4{
-    width: 33.33%;
-    float: left;
-}
-
-#apt-info .info{
+#apt-info .font-gray{
     color: #888888;
 }
 
+#user-img{
+    vertical-align: middle;
+    background-color: black;
+    height: 120px;
+}
 /*==========================================================*/
-/*====================== HEADER ============================*/
+/*====================== SIDE-BAR ==========================*/
 /*==========================================================*/
 
+#side-bar .regular-position{
+    margin-top: -60px;
+    margin-left: 10px;
+}
+
+#side-bar .fix-on-top{
+    position:fixed;
+    top: 0;
+}
+
+#side-bar .sidebar-header{
+    color: #ffffff;
+    height: 60px;
+    width: 315px;
+    background-color: #565a5c;
+}
+
+#side-bar .btn.active{
+    background-color: #3c3c3c;
+    box-shadow: none;
+}
+
+#side-bar .list-inline{
+    margin: 0px;
+    height: 100%;
+}
+
+#side-bar .btn-defualt{
+    width: 50%;
+    height: 100%;
+    padding: 0 0 0 3px;
+    margin: 0;
+    background-color: transparent;
+    text-align: left;
+}
+
+#side-bar .btn:hover {
+    color: #cccccc;
+}
+
+#side-bar .sidebar-body{
+    border: 1px solid #dce0e0;
+    width: 315px;
+}
+
+#side-bar .price-span-top{
+    position: relative;
+    top: -0.5em;
+    padding: 2px;
+}
+
 /*==========================================================*/
-/*======================== FOOTER ==========================*/
+/*======================== DIALOG ==========================*/
 /*==========================================================*/
+
+#apt-slides{
+    /*max-height: 700px;*/
+    overflow: hidden;
+}
 
 /*==========================================================*/
 /*========================= MEDIA ==========================*/
 /*==========================================================*/
-@media (min-width: 768px) {
-    #apt-info .col-md-9{
-        width: 75%;
-        float: left;
+@media (max-width: 767px) {
+    #apt-info .text-center-sm{
+        text-align: center;
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    #apt-info .col-mylg-9{
+        width:65%;
+    }
+
+    #apt-info .col-mylg-3{
+        width:35%;
+        float:left;
     }
 }

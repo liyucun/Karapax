@@ -13,80 +13,143 @@ block content
             .col-md-8.col-md-offset-2.text-center
                a#gallery-btn.btn.btn-default(href='#',data-toggle='modal', data-target='#apt-modal') View Gallery
 
-   #apt-modal.modal(role='dialog')
-      #apt-slides.carousel.slide(data-ride='carousel')
-         ol.carousel-indicators
-            li.active(data-target='#apt-slides', data-slide-to='0')
-            li(data-target='#apt-slides', data-slide-to='1')
-            li(data-target='#apt-slides', data-slide-to='2')
-            li(data-target='#apt-slides', data-slide-to='3')
-         .carousel-inner(role='listbox')
-            .item.active
-               img(src='images/bedroom.jpg',alt='')
-               .carousel-caption
-                  h3
-            .item
-               img(src='images/kitchen.jpg', alt='')
-               .carousel-caption
-                  h3
-                  p
-            .item
-               img(src='images/bedroom.jpg', alt='')
-               .carousel-caption
-                  h3
-                  p
-          a.left.carousel-control(href='#apt-slides', role='button', data-slide='prev')
-            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-            span.sr-only Previous
-          a.right.carousel-control(href='#apt-slides', role='button', data-slide='next')
-            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-            span.sr-only Next
+   #apt-modal.modal.fade(role='dialog')
+      .modal-dialog
+         #apt-slides.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+               li.active(data-target='#apt-slides', data-slide-to='0')
+               li(data-target='#apt-slides', data-slide-to='1')
+               li(data-target='#apt-slides', data-slide-to='2')
+            .carousel-inner(role='listbox')
+               .item.active
+                  img.img-responsive(src='images/400sherbrooke1612br1.jpg',alt='')
+                  .carousel-caption
+                     h3
+               .item
+                  img.img-responsive(src='images/400sherbrooke1612ba1.jpg', alt='')
+                  .carousel-caption
+                     h3
+                     p
+               .item
+                  img.img-responsive(src='images/400sherbrooke1612dr1.jpg', alt='')
+                  .carousel-caption
+                     h3
+                     p
+             a.left.carousel-control(href='#apt-slides', role='button', data-slide='prev')
+               span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+               span.sr-only Previous
+             a.right.carousel-control(href='#apt-slides', role='button', data-slide='next')
+               span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+               span.sr-only Next
 
    section#apt-info
       .container
          .row
-            .col-md-9
+            //full screen if screen size less than 768px, otherwise 75%
+            .col-sm-12.col-mylg-9
+               .row.row-space-4
+                  //host img
+                  .col-sm-3
+                     img#user-img.img-circle.img-responsive.text-center-sm.row-space-4(src='/images/karapax_logo.png', alt='Karapax')
+                  //core info
+                  .col-sm-9
+                     .row.row-space-4
+                        .col-sm-12.text-center
+                           span.h4 400 Sherbooke
+                           span.inline-space-3.font-gray Montreal, QC, Canada
+                           span.inline-space-3.font-gray H3T 1Z3
+                     .row.text-center
+                        .col-xs-4
+                           i.fa.fa-bed.fa-3x
+                           p.font-gray bedrooms
+                        .col-xs-4
+                           i.fa.fa-bed.fa-3x
+                           p.font-gray bathrooms
+                        .col-xs-4
+                           i.fa.fa-calendar.fa-3x
+                           p.font-gray Avaliable
+               //detail info
                .row
-                  .col-md-9
-                     h4.title Address : 2150 St.Mackay
-               .row.text-center
-                  hr.info
-                  .col-md-9
+                  hr.row-space-4
+                  .col-sm-3
+                     p.font-gray The space
+                  .col-sm-9
                      .col-sm-4
-                        i.fa.fa-bed.fa-3x
-                        p bedrooms
-                     .col-sm-4
-                        i.fa.fa-bed.fa-3x
-                        p bathrooms
-                     .col-sm-4
-                        i.fa.fa-calendar.fa-3x
-                        p Avaliable
-               .row.text-center
-                  hr.info
-                  .col-md-9
-                     .col-sm-4
-                        p DownTown
+                        p Area: DownTown
                      .col-sm-4
                         p Size : 100m^2
                      .col-sm-4
                         p Deposit : a month rent
                .row
-                  hr
-                  .col-md-9.col-sm-12
-                     p Description
+                  hr.row-space-4
+                  .col-sm-3
+                     p.font-gray Around
+                  .col-sm-9
+                     .col-sm-4
+                        p Bus : 124,15
+                     .col-sm-4
+                        p Metor : Green Line
+                     .col-sm-4
+                        p Restaurant : a month rent
+                     .col-sm-4
+                        p Bank : TD, BMO, RBC
+                     .col-sm-9
+                        p Entertainment : No
                .row
                   hr
-                  .col-md-9.col-sm-12
-                     p Amenities
+                  .col-sm-3
+                     p.font-gray Amenities
+                  .col-sm-9
+
                .row
-                  hr
-                  .col-md-12.col-sm-12
-                     p Furniture description
+                  hr.row-space-4
+                  .col-sm-3
+                     p.font-gray Description
+                  .col-sm-9
+                     p This is the description for this apartment
                .row
-                  hr
-                  .col-md-12.col-sm-12
-                     p Requirments
-            .col-lg-3.col-md-12.col-sm-12
-               p.fix-width lskdngwosdn
+                  hr.row-space-4
+                  .col-sm-3
+                     p.font-gray Furniture description
+               .row
+                  hr.row-space-4
+                  .col-sm-3
+                     p.font-gray Requirments
+                  .col-sm-9
+                     p No pats, No smoke
+               .row.row-space-4
+            .col-mylg-3.hidden-sm.hidden-xs
+               section#side-bar
+                  .sidebar-header
+                     ul.list-inline.list-unstyled
+                        li.btn.btn-defualt.active
+                              span.h6 I want it for
+                              p.text-center.h4 8 months
+                        li.btn.btn-defualt
+                           span I want it for
+                           p.text-center.h4 12 months
+                  .sidebar-body
+                     .row.row-space-4
+                        .col-xs-12.text-center
+                           label.radio-inline.inline-space-3
+                              input(type='radio', name='optradio', checked='true')
+                              | Furniture
+                           label.radio-inline.inline-space-3
+                              input(type='radio', name='optradio')
+                              | No Furniture
+                     .row
+                        .col-xs-12.text-center
+                           span.h4.price-span-top $
+                           span.h1 1650
+                           span.h4.price-span-top CAD
+                     .row.row-space-4
+                        .col-xs-12.text-center
+                           btn.btn.btn-danger.btn-lg Request to Book
+                     .row.row-space-4
+                        .col-xs-12.text-center
+                           p.h2 Viewers: 1000
+                     .row.row-space-4
+                        .col-xs-12.text-center
+                           btn.btn.btn-success.btn-lg Save to Wish List
 block extraScript
    script( src='/javascripts/karapax.js' )

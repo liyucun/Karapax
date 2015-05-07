@@ -12,7 +12,7 @@ router.get('/career', function(req, res, next) {
 });
 
 router.get('/listing', function(req, res, next) {
-  if(req.query.id==1) var imgPath = 'images/kitchen.jpg';
+  if(req.query.id==1) var imgPath = 'images/181placedyouville300br1.jpg';
   //var imgPath = 'images/kitchen.jpg';
   res.render('listing', { imgPath: imgPath});
 });
