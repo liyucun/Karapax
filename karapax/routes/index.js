@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Karapax' });
@@ -9,7 +10,12 @@ router.get('/', function(req, res, next) {
 router.get('/career', function(req, res, next) {
   res.render('career', { title: 'Karapax'});
 });
+
 router.get('/listing', function(req, res, next) {
-  res.render('listing', { title: 'Karapax'});
+  if(req.query.id==1) var imgPath = 'images/kitchen.jpg';
+  //var imgPath = 'images/kitchen.jpg';
+  res.render('listing', { imgPath: imgPath});
 });
+
+
 module.exports = router;

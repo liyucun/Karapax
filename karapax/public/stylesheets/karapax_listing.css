@@ -8,15 +8,32 @@
 /*==========================================================*/
 
 /*==========================================================*/
-/*========================= BODY ===========================*/
+/*========================= HEADER =========================*/
 /*==========================================================*/
-#apt-info{
-    background-color: #d9edf7;
-    margin-top: 60px;
+#listing-header {
+    min-height: 500px;
+    padding: 150px 0;
+    background: url(../images/livingroom.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-#apt-info img{
-    width: 100%;
+#listing-header .btn {
+    background-color: transparent;
+    border-radius: 5px / 4px;
+    -moz-border-radius: 5px / 4px;
+    -webkit-border-radius: 5px / 4px;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+/*==========================================================*/
+/*========================= APT-INFO =======================*/
+/*==========================================================*/
+#apt-info{
+    /*background-color: #d9edf7;
+    margin-top: 60px;*/
 }
 
 #apt-info .title{
@@ -25,10 +42,13 @@
 }
 
 #apt-info .col-sm-4{
-    width: 25%;
+    width: 33.33%;
     float: left;
 }
 
+#apt-info .info{
+    color: #888888;
+}
 
 /*==========================================================*/
 /*====================== HEADER ============================*/

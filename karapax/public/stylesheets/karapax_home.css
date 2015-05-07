@@ -33,11 +33,9 @@ header .title {
 
 header .btn {
     background-color: transparent;
-
     border-radius: 5px / 4px;
     -moz-border-radius: 5px / 4px;
     -webkit-border-radius: 5px / 4px;
-
     color: #ffffff;
     border-color: #ffffff;
 }
