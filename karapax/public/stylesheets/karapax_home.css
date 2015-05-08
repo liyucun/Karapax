@@ -72,17 +72,14 @@ header .btn:hover {
     box-shadow: 0 0 10px #ccc;
 }
 
-
+#apartments .image-height{
+    width:100%;
+}
 
 #apartments .apt-image{
     position:relative;
     margin: 10px 0;
 }
-
-#apartments .image-heigh{
-    height: 270px;
-}
-
 
 #apartments .price-image{
     background-color: #565a5c;
@@ -129,6 +126,14 @@ header .btn:hover {
 /*==========================================================*/
 /*========================= MEDIA ==========================*/
 /*==========================================================*/
-@media(min-width:768px) {
+@media(min-width:992px) {
+    #apartments .image-height{
+        height: 270px;
+    }
+}
 
+@media (min-width:768px) {
+    #apartments .image-height{
+        height: 234px;
+    }
 }
