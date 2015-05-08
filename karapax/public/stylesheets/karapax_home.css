@@ -79,6 +79,11 @@ header .btn:hover {
     margin: 10px 0;
 }
 
+#apartments .image-heigh{
+    height: 270px;
+}
+
+
 #apartments .price-image{
     background-color: #565a5c;
     color: white;
