@@ -55,7 +55,7 @@ block content
                   .col-sm-9
                      .row.row-space-4
                         .col-sm-12.text-center
-                           span.h4 400 Sherbooke
+                           span.h4 #{address}
                            span.inline-space-3.font-gray Montreal, QC, Canada
                            span.inline-space-3.font-gray H3T 1Z3
                      .row.text-center
@@ -75,32 +75,32 @@ block content
                      p.font-gray The space
                   .col-sm-9
                      .col-sm-4
-                        p Area: DownTown
+                        p Area: #{area}
                      .col-sm-4
-                        p Bedrooms: 2
+                        p Bedrooms: #{bedrooms}
                      .col-sm-4
-                        p bathrooms: 1
+                        p bathrooms: #{bathrooms}
                      .col-sm-4
-                        p Size : 100m^2
+                        p Size : #{size}m^2
                      .col-sm-4
                         p Deposit : a month rent
                      .col-sm-4
-                        p Available Date : 1st Sep.
+                        p Available Date : #{avaDate}
                .row
                   hr.row-space-4
                   .col-sm-3
                      p.font-gray Around
                   .col-sm-9
                      .col-sm-4
-                        p Bus : 124,15
+                        p Bus : #{around.bus}
                      .col-sm-4
-                        p Metor : Green Line
+                        p Metor : #{around.metro}
                      .col-sm-4
-                        p Restaurant : a month rent
+                        p Restaurant : #{around.restaurant}
                      .col-sm-4
-                        p Bank : TD, BMO, RBC
+                        p Bank : #{around.bank}
                      .col-sm-9
-                        p Entertainment : No
+                        p Entertainment : #{around.entertainment}
                .row
                   hr
                   .col-sm-3
@@ -112,11 +112,13 @@ block content
                   .col-sm-3
                      p.font-gray Description
                   .col-sm-9
-                     p This is the description for this apartment
+                     p #{description}
                .row
                   hr.row-space-4
                   .col-sm-3
                      p.font-gray Furniture description
+                  .col-sm-9
+                     p #{furniture}
                .row
                   hr.row-space-4
                   .col-sm-3
@@ -128,10 +130,10 @@ block content
                section#side-bar.regular-position
                   .sidebar-header
                      ul.list-inline.list-unstyled
-                        li.btn.btn-defualt.active
+                        li.btn.btn-defualt
                               span.h6 I want it for
                               p.text-center.h4 8 months
-                        li.btn.btn-defualt
+                        li.btn.btn-defualt.active
                            span I want it for
                            p.text-center.h4 12 months
                   .sidebar-body
@@ -146,7 +148,7 @@ block content
                      .row
                         .col-xs-12.text-center
                            span.h4.price-span-top $
-                           span.h1 1650
+                           span.h1 #{price.twelve}
                            span.h4.price-span-top CAD
                            p.h6 per month
                      .row.row-space-4
@@ -154,7 +156,7 @@ block content
                            btn.btn.btn-danger.btn-lg Request to Book
                      .row.row-space-4
                         .col-xs-12.text-center
-                           p.h2 Viewers: 1000
+                           p.h2 Viewers: #{viewer}
                      .row.row-space-4
                         .col-xs-12.text-center
                            btn.btn.btn-success.btn-lg Save to Wish List

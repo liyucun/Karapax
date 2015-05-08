@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
+var listing = require('./listing');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -11,11 +11,7 @@ router.get('/career', function(req, res, next) {
   res.render('career', { title: 'Karapax'});
 });
 
-router.get('/listing', function(req, res, next) {
-  if(req.query.id==1) var imgPath = 'images/181placedyouville300br1.jpg';
-  //var imgPath = 'images/kitchen.jpg';
-  res.render('listing', { imgPath: imgPath});
-});
+router.use('/',listing);
 
 
 module.exports = router;
