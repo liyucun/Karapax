@@ -36,10 +36,10 @@ $(window).scroll(function() {
     */
     if ($(window).scrollTop() > 440) {
         $(".sidebar-header").addClass("fix-on-top");
-        $(".sidebar-body").addClass("fix-on-top");
+        $(".sidebar-body").addClass("fix-on-top-body");
     } else {
         $(".sidebar-header").removeClass("fix-on-top");
-        $(".sidebar-body").removeClass('fix-on-top');
+        $(".sidebar-body").removeClass("fix-on-top-body");
     }
 });
 // "how it works" pop out
