@@ -29,6 +29,13 @@ footer {
     padding: 40px;
 }
 
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: #888888;
+}
+
 footer .fa {
     width: 32px;
     font-size: 14px;

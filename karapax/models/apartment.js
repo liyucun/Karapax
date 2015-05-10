@@ -3,6 +3,7 @@
  */
 var aptSchema = {
     _id: 'dslkfjdsof',
+    title: "Karapax",
     address: '400 Sherbrook',
     area: 'DownTown',
     price: {eight: 1700, twelve: 1650},

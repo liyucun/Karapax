@@ -7,23 +7,6 @@ block extraHeader
 
 block content
 
-
-    //div for the sign up
-    //div#sign-up.modal
-        div.modal-table
-            div.modal-cell
-                div.signup.modal-content wtf
-
-
-    // div on the top of the screen, "how it works", the procedure of using website
-    div#how-it-works.hide
-        div.how-it-works-section.panel-babu-muted.panel-contrast.page-container-responsive.overlay
-            a.panel-close(href='#')
-            div.page-container-responsive
-                div.row.row-space-top-2
-
-
-
     // header image
     header
         .container
@@ -31,8 +14,8 @@ block content
                 .col-md-8.col-md-offset-2.text-center
                     h1.title 家，就在不远处
                     p.title 多样化租房选择，便捷化租房体验，让寻房不再难
-                    // link to the "how it works" div
-                    a#how-it-works-btn.btn.btn-default(href='#') How it works
+                    // link to the "apartment" div
+                    a#how-it-works-btn.btn.btn-default(href='#apartments') Click
 
     //apartment image list on home page
     section#apartments
@@ -104,24 +87,37 @@ block content
 
     //About us section
     section#about
-        .container
+        .container.bottom-space
             .row.space
                 .col-md-12
-                    h2 关于我们
+                    h1.text-center 关于我们
             .row.space
                 .col-md-12
-                    p.
+                    p.about-us-font.
                         成立于加拿大蒙特利尔，Karapax 是一个专属于海外游子的租房平台。
                         无论你在国内还是国外，一切繁琐的租房程序由我们承担。以可靠的房源，多样的租房选择，人性化的网站，
                         我们致力于为用户打造最便捷称心的租住体验。
             .row.space
-                .col-md-12
-                    p 我们承诺：
-                    ul.list-unstyled
-                        li 安心：以万分承诺，慎选房源，免除你的后顾之忧。
-                        li 精心：以千条标准，精挑细选，找到你心目中的家。
-                        li 省心：从找房到入住，你的工作，我们完成。
-                        li 称心：地点？环境？家具？设施？你的需求，我们满足。
+                .col-md-6.col-sm-12
+                    img(src='images/logo.png', alt='').about-pic
+                    .about-span
+                        p.h3.about-us-para 安心
+                        p.h6.about-us-para 以万分承诺，慎选房源，免除你的后顾之忧
+                .col-md-6.col-sm-12
+                    img(src='images/logo.png', alt='').about-pic
+                    .about-span
+                        p.h3.about-us-para 精心
+                        p.h6.about-us-para 以千条标准，精挑细选，找到你心目中的家
+                .col-md-6.col-sm-12
+                    img(src='images/logo.png', alt='').about-pic
+                    .about-span
+                        p.h3.about-us-para 省心
+                        p.h6.about-us-para 从找房到入住，你的工作，我们完成
+                .col-md-6.col-sm-12
+                    img(src='images/logo.png', alt='').about-pic
+                    .about-span
+                        p.h3.about-us-para 称心
+                        p.h6.about-us-para 地点？环境？家具？设施？你的需求，我们满足.
 // load karapax js
 block extraScript
     script( src='/javascripts/karapax.js' )
