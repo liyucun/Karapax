@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var listing = require('./listing');
+var test = require('./test');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -11,7 +11,7 @@ router.get('/career', function(req, res, next) {
   res.render('career', { title: 'Karapax'});
 });
 
-router.use('/',listing);
+router.use('/',test);
 
 
 module.exports = router;
