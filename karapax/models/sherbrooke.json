@@ -1,0 +1,46 @@
+{
+  "address" : "400 sherbrooke",
+  "area" : "市中心",
+  "price" : {"eight": 1700, "twelve": 1650},
+  "deposit" : 1650,
+  "avaDate" : "2015-09-01",
+  "size" : 100,
+  "type" : "酒店式公寓studio",
+  "bedrooms" : 0,
+  "bathrooms" : 1,
+  "description" : "它坐落于市中心的酒店式公寓，内部设施齐全，让你免费享受健身房，游泳池等设施。交通方便，5分钟步行可达麦吉尔大学，地铁站与各种餐饮超市。房间宽敞，采光好，有独立阳台。",
+  "state" : 1,
+  "hasFurniture" : 1,
+  "requirements" : {
+    "pat" : 1,
+    "smoke" : 1
+  },
+  "viewer" : 0,
+  "imgPath" : ["400sherbrooke1612br1.jpg","400sherbrooke1612ba2.jpg","400sherbrooke1612ba1.jpg","400sherbrooke1612dr1.jpg","400sherbrooke1612hw1.jpg"],
+  "around" : {
+    "school" : "McGill",
+    "bus" : "24，80，356",
+    "metro" : "Place des arts",
+    "market" : "Provigo",
+    "restaurant" : "",
+    "bank" : "TD",
+    "entertainment" : "",
+    "others" : ""
+  },
+  "furniture": {
+    "electrical": "电视，空调",
+    "table": "电视柜，茶几，椅子",
+    "light": "台灯",
+    "bed": "沙发床，Queen Size大床",
+    "others": ""
+  },
+  "amenities" : {
+    "kitchen" : "整体厨房",
+    "indoor" : "阳台，浴缸",
+    "net" : "无线网",
+    "elevator" : "电梯",
+    "entertainment" : "健身房，游泳池",
+    "parking" : "付费停车",
+    "others" : "洗衣机，干衣机"
+  }
+}

@@ -7,7 +7,8 @@ var listing = require('../controllers/listing');
 
 /* GET listing page. */
 router.get('/listing', function(req, res, next) {
-    res.render('listing', listing.getAptInfo(req, res, next));
+    var temp = listing.getAptInfo(req,res,next);
+    //res.render('listing', temp);
 });
 
 

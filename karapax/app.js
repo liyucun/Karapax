@@ -7,9 +7,21 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var test = require('./routes/test');
+var listing = require('./routes/listing');
+var save = require('./routes/test');
 
 var app = express();
+
+//mongodb connection setup
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/karapax');
+var db = mongoose.connection;
+db.on('error', function (err) {
+  console.log('connection error', err);
+});
+db.once('open', function () {
+  console.log('connected.');
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,7 +38,8 @@ app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/test', test);
+app.use('/', listing);
+app.use('/', save);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -34,8 +47,6 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-
-// error handlers
 
 // development error handler
 // will print stacktrace

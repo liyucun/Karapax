@@ -4,26 +4,19 @@
 var express = require('express');
 var router = express.Router();
 
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
+var apt = require('../models/apartment').model;
+var aptSherbrooke = require('../models/sherbrooke');
 
-var Cat = mongoose.model('Kitten', { name: String });
+//var mongoose = require("mongoose");
 
 
-
-/* GET home page. */
-router.get('/test', function(req, res, next) {
-    var db = mongoose.connection;
-    var kittens;
-    db.on('error', console.error.bind(console, 'connection error:'));
-    db.once('open', function (callback) {
-        Cat.find(function (err, kittens) {
-            if (err) return console.error(err);
-            console.log(kittens)
-        })
-
-    });
-    res.render('test', kittens);
+router.get('/save', function(req, res, next) {
+    var sherbrooke = new apt(aptSherbrooke);
+    sherbrooke.save(function(err){
+        if(err) console.log(err);
+        console.log(sherbrooke);
+    })
+    res.render('test',{name:"Karapx"});
 
 });
 
