@@ -12,16 +12,6 @@ var save = require('./routes/test');
 
 var app = express();
 
-//mongodb connection setup
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/karapax');
-var db = mongoose.connection;
-db.on('error', function (err) {
-  console.log('connection error', err);
-});
-db.once('open', function () {
-  console.log('connected.');
-});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

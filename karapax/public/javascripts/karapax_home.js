@@ -3,14 +3,14 @@
  */
 
 // the pop up modal for showing apartment picture
-$(window).load(function(){
+/*$(window).load(function(){
     $('img').on('click',function()
     {
         var sr=$(this).attr('src');
         $('#apartments-img').attr('src',sr);
         $('#apartment-pic-modal').modal('show');
     });
-});
+});*/
 
 
 $(window).scroll(function() {

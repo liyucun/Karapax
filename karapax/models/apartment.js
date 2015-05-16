@@ -14,12 +14,16 @@ var aptSchema = new Schema({
     province: String,
     city: String,
     address: String,
+    aptNumber: Number,
     zipcode: String,
     area: String,
     price: {eight: Number, twelve: Number},
     deposit: Number,
     avaDate: Date,
-    size: Number,
+    size: {
+        type:Number,
+        default: 0
+    },
     type: String,
     bedrooms: Number,
     bathrooms: Number,
