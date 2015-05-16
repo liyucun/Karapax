@@ -10,7 +10,11 @@ var Schema = mongoose.Schema;
 
 //Apt Schema
 var aptSchema = new Schema({
+    country: String,
+    province: String,
+    city: String,
     address: String,
+    zipcode: String,
     area: String,
     price: {eight: Number, twelve: Number},
     deposit: Number,
@@ -30,7 +34,7 @@ var aptSchema = new Schema({
         'default': true
     },
     requirements: {
-        pat: {type:Boolean,'default': true},
+        pet: {type:Boolean,'default': true},
         smoke: {type:Boolean,'default': true}
     },
     viewer: Number,

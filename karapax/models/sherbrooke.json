@@ -1,6 +1,10 @@
 {
+  "country" : "Canada",
+  "province" : "Quebec",
+  "city" : "Montreal",
   "address" : "400 sherbrooke",
   "area" : "市中心",
+  "zipcode" : "H3T 1Z3",
   "price" : {"eight": 1700, "twelve": 1650},
   "deposit" : 1650,
   "avaDate" : "2015-09-01",
@@ -12,7 +16,7 @@
   "state" : 1,
   "hasFurniture" : 1,
   "requirements" : {
-    "pat" : 1,
+    "pet" : 1,
     "smoke" : 1
   },
   "viewer" : 0,

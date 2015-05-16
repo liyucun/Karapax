@@ -17,7 +17,8 @@ $(window).scroll(function() {
     // navbar animation while scrolling
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
+    }
+    if ($(".navbar").offset().top < 50){
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 
@@ -34,13 +35,7 @@ $(window).scroll(function() {
         }
     }
     */
-    if ($(window).scrollTop() > 440) {
-        $(".sidebar-header").addClass("fix-on-top");
-        $(".sidebar-body").addClass("fix-on-top-body");
-    } else {
-        $(".sidebar-header").removeClass("fix-on-top");
-        $(".sidebar-body").removeClass("fix-on-top-body");
-    }
+
 });
 // "how it works" pop out
 /*

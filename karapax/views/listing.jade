@@ -11,7 +11,7 @@ block content
       .container
          .row
             .col-md-8.col-md-offset-2.text-center
-               a#gallery-btn.btn.btn-default(href='#',data-toggle='modal', data-target='#apt-modal') View Gallery
+               a#gallery-btn.btn.btn-default(href='#',data-toggle='modal', data-target='#apt-modal') 查看全部图片
 
    #apt-modal.modal.fade(role='dialog')
       .modal-dialog
@@ -56,109 +56,188 @@ block content
                      .row.row-space-4
                         .col-sm-12.text-center
                            span.h4 #{address}
-                           span.inline-space-3.font-gray Montreal, QC, Canada
-                           span.inline-space-3.font-gray H3T 1Z3
+                           span.inline-space-3.font-gray #{city}, #{province}, #{country}
+                           span.inline-space-3.font-gray #{zipcode}
                      .row.text-center
                         .col-xs-4
-                           i.fa.fa-bed.fa-3x
-                           p.font-gray bedrooms
+                           img.apt-icon(src='images/bedroom.png', alt='')
+                           p.font-gray #{bedrooms}卧室
                         .col-xs-4
-                           i.fa.fa-bed.fa-3x
-                           p.font-gray bathrooms
+                           img.apt-icon(src='images/bathroom.png', alt='')
+                           p.font-gray #{bathrooms}浴室
                         .col-xs-4
-                           i.fa.fa-calendar.fa-3x
-                           p.font-gray Avaliable
+                           i.fa.fa-check.fa-3x.text-success
+                           p.font-gray #{avaDate.getMonth()}月 #{avaDate.getDate()}日 可租
+               //description of the apt
+               .row
+                  hr.row-space-4
+                  .col-sm-2
+                     p.font-gray 关于这个家
+                  .col-sm-10
+                     p #{description}
                //detail info
                .row
                   hr.row-space-4
-                  .col-sm-3
-                     p.font-gray The space
-                  .col-sm-9
-                     .col-sm-4
-                        p Area: #{area}
-                     .col-sm-4
-                        p Bedrooms: #{bedrooms}
-                     .col-sm-4
-                        p bathrooms: #{bathrooms}
-                     .col-sm-4
-                        p Size : #{size}m^2
-                     .col-sm-4
-                        p Deposit : a month rent
-                     .col-sm-4
-                        p Available Date : #{avaDate}
+                  .col-sm-2
+                     p.font-gray 房屋信息
+                  .col-sm-10
+                     .row
+                        .col-sm-4
+                           p 区域 : #{area}
+                        .col-sm-4
+                           p 类型 : #{type}
+                        .col-sm-4
+                           p 大小 : #{size} m
+                              sup 2
+                     .row
+                        .col-sm-4
+                           p 卧室 : #{bedrooms}
+                        .col-sm-4
+                           p 浴室 : #{bathrooms}
+                        .col-sm-4
+                           p 押金 : $ #{deposit} CAD
+                     .row
+                        .col-sm-4
+                           p 起租日期 : #{avaDate.getMonth()}月#{avaDate.getDate()}日
+               //Around the apt
                .row
                   hr.row-space-4
-                  .col-sm-3
-                     p.font-gray Around
-                  .col-sm-9
-                     .col-sm-4
-                        p Bus : #{around.bus}
-                     .col-sm-4
-                        p Metor : #{around.metro}
-                     .col-sm-4
-                        p Restaurant : #{around.restaurant}
-                     .col-sm-4
-                        p Bank : #{around.bank}
-                     .col-sm-9
-                        p Entertainment : #{around.entertainment}
+                  .col-sm-2
+                     p.font-gray 周边
+                  .col-sm-10
+                     .row
+                        .col-sm-4
+                           i.fa.fa-university
+                           span #{around.school}
+                        .col-sm-4
+                           i.fa.fa-bus
+                           span #{around.bus}
+                        .col-sm-4
+                           i.fa.fa-subway
+                           span #{around.metro}
+                     .row
+                        .col-sm-4
+                           i.fa.fa-shopping-cart
+                           span #{around.market}
+                        .col-sm-4
+                           i.fa.fa-dollar
+                           span #{around.bank}
+                        .col-sm-4
+                           i.fa.fa-coffee
+                           span #{around.restaurant}
+                     .row
+                        .col-sm-4
+                           p 娱乐 : #{around.entertainment}
+                     .row
+                        .col-sm-12
+                           p 其他 : #{around.others}
                .row
                   hr
-                  .col-sm-3
-                     p.font-gray Amenities
-                  .col-sm-9
-
+                  .col-sm-2
+                     p.font-gray 内部设施
+                  .col-sm-10
+                     .row
+                        .col-sm-4
+                           i.fa.fa-cutlery
+                           span #{amenities.kitchen}
+                        .col-sm-4
+                           i.fa.fa-wifi
+                           sapn #{amenities.net}
+                        .col-sm-4
+                           i.fa.fa-arrow-up
+                           span #{amenities.elevator}
+                     .row
+                        .col-sm-4
+                           i.fa.fa-home
+                           span #{amenities.indoor}
+                        .col-sm-4
+                           i.fa.fa-futbol-o
+                           span #{amenities.entertainment}
+                        .col-sm-4
+                           i.fa.fa-car
+                           span #{amenities.parking}
+                     .row
+                        .col-sm-12
+                           p 其他 : #{amenities.others}
                .row
                   hr.row-space-4
-                  .col-sm-3
-                     p.font-gray Description
-                  .col-sm-9
-                     p #{description}
+                  .col-sm-2
+                     p.font-gray 家具
+                  .col-sm-10
+                     .row
+                        .col-sm-4
+                           i.fa.fa-plug
+                           span #{furniture.electrical}
+                        .col-sm-4
+                           i.fa.fa-lightbulb-o
+                           span #{furniture.light}
+                        .col-sm-4
+                           img(src='images/table.png').fa.apt-icon-small
+                           span #{furniture.table}
+                     .row
+                        .col-sm-4
+                           i.fa.fa-bed
+                           span #{furniture.bed}
+                     .row
+                        .col-sm-12
+                           p 其他 : #{furniture.others}
                .row
                   hr.row-space-4
-                  .col-sm-3
-                     p.font-gray Furniture description
-                  .col-sm-9
-                     p #{furniture}
-               .row
-                  hr.row-space-4
-                  .col-sm-3
-                     p.font-gray Requirments
-                  .col-sm-9
-                     p No pats, No smoke
+                  .col-sm-2
+                     p.font-gray 要求
+                  .col-sm-10
+                     .row
+                        .col-sm-4
+                           i.fa.fa-paw
+                           if requirements.pet
+                              i.fa.fa-check.text-success
+                           else
+                              i.fa.fa-close.text-danger
+                        .col-sm-4
+                           img.apt-icon-small(src='images/smoke.png', alt='')
+                           if requirements.smoke
+                              i.fa.fa-check.text-success
+                           else
+                              i.fa.fa-close.text-danger
                .row.row-space-4
             .col-mylg-3.hidden-sm.hidden-xs
-               section#side-bar.regular-position
+               section#side-bar
                   .sidebar-header
-                     ul.list-inline.list-unstyled
-                        li.btn.btn-defualt
-                              span.h6 I want it for
-                              p.text-center.h4 8 months
-                        li.btn.btn-defualt.active
-                           span I want it for
-                           p.text-center.h4 12 months
+                     ul.list-inline.list-unstyled#price-btns
+                        li.btn.btn-defualt#eight-btn
+                              span.h6 我要租
+                              p.text-center.h4 8个月
+                        li.btn.btn-defualt.active#twelve-btn
+                           span.h6 我要租
+                           p.text-center.h4 12个月
                   .sidebar-body
                      .row.row-space-4
                         .col-xs-12.text-center
                            label.radio-inline.inline-space-3
                               input(type='radio', name='optradio', checked='true')
-                              | Furniture
+                              | 带家具
                            label.radio-inline.inline-space-3
-                              input(type='radio', name='optradio')
-                              | No Furniture
+                              if hasFurniture
+                                 input(type='radio', name='optradio' disabled)
+                                 | 不带家具
+                              else
+                                 input(type='radio', name='optradio')
+                                 | 不带家具
                      .row
                         .col-xs-12.text-center
                            span.h4.price-span-top $
-                           span.h1 #{price.twelve}
+                           span.h1.hidden#eight-price #{price.eight}
+                           span.h1#twelve-price #{price.twelve}
                            span.h4.price-span-top CAD
-                           p.h6 per month
+                           p.h6 每月
                      .row.row-space-4
                         .col-xs-12.text-center
-                           btn.btn.btn-danger.btn-lg Request to Book
+                           btn.btn.btn-danger.btn-lg.disabled 马上订房
                      .row.row-space-4
                         .col-xs-12.text-center
-                           p.h2 Viewers: #{viewer}
+                           p.h2 浏览: #{viewer} 人/次
                      .row.row-space-4
                         .col-xs-12.text-center
-                           btn.btn.btn-success.btn-lg Save to Wish List
+                           btn.btn.btn-success.btn-lg.disabled 加入心愿清单
 block extraScript
-   script( src='/javascripts/karapax.js' )
+   script( src='/javascripts/karapax_listing.js' )
