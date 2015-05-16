@@ -29,6 +29,11 @@ var aptSchema = new Schema({
         type: Number,
         'default': 0
     },
+    hostId: {
+        type: String,
+        'default' : 'karapax'
+    },
+    renterId: String,
     hasFurniture: {
         type: Boolean,
         'default': true
