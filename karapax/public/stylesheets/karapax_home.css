@@ -115,9 +115,33 @@ header .btn:hover {
 
 }
 
-/*h2 h4 p#about  {
-    text-align: center;
-}*/
+
+#about .about-span{
+    position: absolute;
+    left: 90px;
+    top: 0px;
+}
+
+#about .about-us-para{
+    position: relative;
+    top: -0.5em;
+}
+
+
+#about .about-pic{
+
+    height:70px;
+    width: 70px;
+}
+#about .about-us-font{
+    font-size: medium;
+}
+
+#about .bottom-space{
+    margin-bottom: 20px;
+}
+
+
 
 #about .space{
     padding: 10px 0;
