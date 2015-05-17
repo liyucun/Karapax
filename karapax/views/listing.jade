@@ -20,18 +20,30 @@ block content
                li.active(data-target='#apt-slides', data-slide-to='0')
                li(data-target='#apt-slides', data-slide-to='1')
                li(data-target='#apt-slides', data-slide-to='2')
+               li(data-target='#apt-slides', data-slide-to='3')
+               li(data-target='#apt-slides', data-slide-to='4')
             .carousel-inner(role='listbox')
                .item.active
-                  img.img-responsive(src='images/400sherbrooke1612br1.jpg',alt='')
+                  img.img-responsive(src='images/#{imgPath[0]}',alt='')
                   .carousel-caption
                      h3
                .item
-                  img.img-responsive(src='images/400sherbrooke1612ba1.jpg', alt='')
+                  img.img-responsive(src='images/#{imgPath[1]}.jpg', alt='')
                   .carousel-caption
                      h3
                      p
                .item
-                  img.img-responsive(src='images/400sherbrooke1612dr1.jpg', alt='')
+                  img.img-responsive(src='images/#{imgPath[2]}.jpg', alt='')
+                  .carousel-caption
+                     h3
+                     p
+               .item
+                  img.img-responsive(src='images/#{imgPath[3]}.jpg', alt='')
+                  .carousel-caption
+                     h3
+                     p
+               .item
+                  img.img-responsive(src='images/#{imgPath[4]}.jpg', alt='')
                   .carousel-caption
                      h3
                      p
