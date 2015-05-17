@@ -2,8 +2,8 @@
 /*================= BOOTSTRAP OVERIDE ======================*/
 /*==========================================================*/
 #apt-info i,.apt-icon-small{
-    height:20px;
-    width: 20px;
+    height:25px;
+    width: 25px;
     margin-right: .5em;
 }
 
@@ -17,7 +17,7 @@
 #listing-header {
     min-height: 500px;
     padding: 150px 0;
-    background: url(../images/400sherbrooke1612br1.jpg) no-repeat center;
+    background: center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -45,6 +45,11 @@
     margin-right: 8px;
 }
 
+#apt-info .row-space-1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 #apt-info .font-gray{
     color: #888888;
 }
@@ -56,8 +61,8 @@
 }
 
 #apt-info img.apt-icon{
-    height: 3em;
-    width: 3em;
+    height: 5em;
+    width: 5em;
 }
 /*==========================================================*/
 /*====================== SIDE-BAR ==========================*/

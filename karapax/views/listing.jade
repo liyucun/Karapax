@@ -7,7 +7,7 @@ block extraHeader
    link(rel='stylesheet', href='/stylesheets/karapax_listing.css')
 
 block content
-   section#listing-header
+   section#listing-header(style='background-image: url(../images/#{imgPath[0]});')
       .container
          .row
             .col-md-8.col-md-offset-2.text-center
@@ -78,22 +78,22 @@ block content
                            img.apt-icon(src='images/bathroom.png', alt='')
                            p.font-gray #{bathrooms}浴室
                         .col-xs-4
-                           i.fa.fa-check.fa-3x.text-success
+                           i.fa.fa-check.fa-5x.text-success
                            p.font-gray #{avaDate.getMonth()+1}月 #{avaDate.getDate()}日 可租
                //description of the apt
                .row
                   hr.row-space-4
                   .col-sm-2
-                     p.font-gray 关于这个家
+                     p.h5.font-gray 关于这个家
                   .col-sm-10
-                     p #{description}
+                     p.h5 #{description}
                //detail info
                .row
                   hr.row-space-4
                   .col-sm-2
                      p.font-gray 房屋信息
                   .col-sm-10
-                     .row
+                     .row.row-space-1
                         .col-sm-4
                            p 区域 : #{area}
                         .col-sm-4
@@ -102,14 +102,14 @@ block content
                            .col-sm-4
                               p 大小 : #{size} m
                                  sup 2
-                     .row
+                     .row.row-space-1
                         .col-sm-4
                            p 卧室 : #{bedrooms}
                         .col-sm-4
                            p 浴室 : #{bathrooms}
                         .col-sm-4
                            p 押金 : $ #{deposit} CAD
-                     .row
+                     .row.row-space-1
                         .col-sm-4
                            p 起租日期 : #{avaDate.getMonth()+1}月#{avaDate.getDate()}日
                //Around the apt
@@ -118,30 +118,30 @@ block content
                   .col-sm-2
                      p.font-gray 周边
                   .col-sm-10
-                     .row
+                     .row.row-space-1
                         .col-sm-4
-                           i.fa.fa-university
+                           i.fa.fa-university.fa-2x
                            span #{around.school}
                         .col-sm-4
-                           i.fa.fa-bus
+                           i.fa.fa-bus.fa-2x
                            span #{around.bus}
                         .col-sm-4
-                           i.fa.fa-subway
+                           i.fa.fa-subway.fa-2x
                            span #{around.metro}
-                     .row
+                     .row.row-space-1
                         .col-sm-4
-                           i.fa.fa-shopping-cart
+                           i.fa.fa-shopping-cart.fa-2x
                            span #{around.market}
                         .col-sm-4
-                           i.fa.fa-dollar
+                           i.fa.fa-dollar.fa-2x
                            span #{around.bank}
                         .col-sm-4
-                           i.fa.fa-coffee
+                           i.fa.fa-coffee.fa-2x
                            span #{around.restaurant}
-                     .row
+                     .row.row-space-1
                         .col-sm-4
                            p 娱乐 : #{around.entertainment}
-                     .row
+                     .row.row-space-1
                         .col-sm-12
                            p 其他 : #{around.others}
                .row
@@ -149,27 +149,27 @@ block content
                   .col-sm-2
                      p.font-gray 内部设施
                   .col-sm-10
-                     .row
+                     .row.row-space-1
                         .col-sm-4
-                           i.fa.fa-cutlery
+                           i.fa.fa-cutlery.fa-2x
                            span #{amenities.kitchen}
                         .col-sm-4
-                           i.fa.fa-wifi
+                           i.fa.fa-wifi.fa-2x
                            sapn #{amenities.net}
                         .col-sm-4
-                           i.fa.fa-arrow-up
+                           i.fa.fa-arrow-up.fa-2x
                            span #{amenities.elevator}
-                     .row
+                     .row.row-space-1
                         .col-sm-4
-                           i.fa.fa-home
+                           i.fa.fa-home.fa-2x
                            span #{amenities.indoor}
                         .col-sm-4
-                           i.fa.fa-futbol-o
+                           i.fa.fa-futbol-o.fa-2x
                            span #{amenities.entertainment}
                         .col-sm-4
-                           i.fa.fa-car
+                           i.fa.fa-car.fa-2x
                            span #{amenities.parking}
-                     .row
+                     .row.row-space-1
                         .col-sm-12
                            p 其他 : #{amenities.others}
                .row
@@ -177,21 +177,21 @@ block content
                   .col-sm-2
                      p.font-gray 家具
                   .col-sm-10
-                     .row
+                     .row.row-space-1
                         .col-sm-4
-                           i.fa.fa-plug
+                           i.fa.fa-plug.fa-2x
                            span #{furniture.electrical}
                         .col-sm-4
-                           i.fa.fa-lightbulb-o
+                           i.fa.fa-lightbulb-o.fa-2x
                            span #{furniture.light}
                         .col-sm-4
                            img(src='images/table.png').fa.apt-icon-small
                            span #{furniture.table}
-                     .row
+                     .row.row-space-1
                         .col-sm-4
-                           i.fa.fa-bed
+                           i.fa.fa-bed.fa-2x
                            span #{furniture.bed}
-                     .row
+                     .row.row-space-1
                         .col-sm-12
                            p 其他 : #{furniture.others}
                .row
@@ -199,19 +199,19 @@ block content
                   .col-sm-2
                      p.font-gray 要求
                   .col-sm-10
-                     .row
+                     .row.row-space-1
                         .col-sm-4
-                           i.fa.fa-paw
+                           i.fa.fa-paw.fa-2x
                            if requirements.pet
-                              i.fa.fa-check.text-success
+                              i.fa.fa-check.text-success.fa-2x
                            else
-                              i.fa.fa-close.text-danger
+                              i.fa.fa-close.text-danger.fa-2x
                         .col-sm-4
                            img.apt-icon-small(src='images/smoke.png', alt='')
                            if requirements.smoke
-                              i.fa.fa-check.text-success
+                              i.fa.fa-check.text-success.fa-2x
                            else
-                              i.fa.fa-close.text-danger
+                              i.fa.fa-close.text-danger.fa-2x
                .row.row-space-4
             .col-mylg-3.hidden-sm.hidden-xs
                section#side-bar
