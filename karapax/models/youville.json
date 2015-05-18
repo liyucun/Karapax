@@ -8,7 +8,6 @@
   "price" : {"eight": 1800, "twelve": 1650},
   "deposit" : {"eight": 1800, "twelve": 1650},
   "avaDate" : "2015/09/01",
-  "size" : 0,
   "type" : "两室一厅",
   "bedrooms" : 2,
   "bathrooms" : 1,
@@ -16,8 +15,8 @@
   "state" : 1,
   "hasFurniture" : 1,
   "requirements" : {
-    "pet" : 0,
-    "smoke" : 0
+    "pet" : 1,
+    "smoke" : 1
   },
   "viewer" : 0,
   "imgPath" : ["181placedyouville300br1.jpg","181placedyouville300br2.jpg","181placedyouville300dd1.png","181placedyouville300hw1.png","181placedyouville300kc1.png"],

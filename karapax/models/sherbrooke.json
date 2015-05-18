@@ -8,7 +8,6 @@
   "price" : {"eight": 1300, "twelve": 1150},
   "deposit" : {"eight": 1300, "twelve": 1150},
   "avaDate" : "2015/09/01",
-  "size" : 100,
   "type" : "酒店式公寓studio",
   "bedrooms" : 0,
   "bathrooms" : 1,
