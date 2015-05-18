@@ -5,8 +5,8 @@
   "address" : "181 Place d’Youville",
   "area" : "蒙特利尔老城区",
   "zipcode" : "H2Y 2B2",
-  "price" : {"eight": 1700, "twelve": 1650},
-  "deposit" : 300,
+  "price" : {"eight": 1800, "twelve": 1650},
+  "deposit" : {"eight": 1800, "twelve": 1650},
   "avaDate" : "2015/09/01",
   "size" : 0,
   "type" : "两室一厅",
@@ -20,7 +20,7 @@
     "smoke" : 0
   },
   "viewer" : 0,
-  "imgPath" : ["400sherbrooke1612br1.jpg","400sherbrooke1612ba2.jpg","400sherbrooke1612ba1.jpg","400sherbrooke1612dr1.jpg","400sherbrooke1612hw1.jpg"],
+  "imgPath" : ["181placedyouville300br1.jpg","181placedyouville300br2.jpg","181placedyouville300dd1.png","181placedyouville300hw1.png","181placedyouville300kc1.png"],
   "around" : {
     "school" : "",
     "bus" : "55,715,129",

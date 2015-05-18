@@ -37,6 +37,8 @@ $('#eight-btn').click(function(){
     $('#twelve-price').addClass('hidden');
     $('#eight-btn').addClass('active');
     $('#twelve-btn').removeClass('active');
+    $('#deposit-eight').removeClass('hidden');
+    $('#deposit-twelve').addClass('hidden');
 });
 
 $('#twelve-btn').click(function(){
@@ -45,4 +47,6 @@ $('#twelve-btn').click(function(){
     $('#eight-price').addClass('hidden');
     $('#eight-btn').removeClass('active');
     $('#twelve-btn').addClass('active');
+    $('#deposit-eight').addClass('hidden');
+    $('#deposit-twelve').removeClass('hidden');
 });

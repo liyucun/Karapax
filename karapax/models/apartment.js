@@ -18,7 +18,7 @@ var aptSchema = new Schema({
     zipcode: String,
     area: String,
     price: {eight: Number, twelve: Number},
-    deposit: Number,
+    deposit: {eight: Number, twelve: Number},
     avaDate: Date,
     size: {
         type:Number,

@@ -108,7 +108,8 @@ block content
                         .col-sm-4
                            p 浴室 : #{bathrooms}
                         .col-sm-4
-                           p 押金 : $ #{deposit} CAD
+                           p.hidden#deposit-eight 押金 : $ #{deposit.eight} CAD
+                           p#deposit-twelve 押金 : $ #{deposit.twelve} CAD
                      .row.row-space-1
                         .col-sm-4
                            p 起租日期 : #{avaDate.getMonth()+1}月#{avaDate.getDate()}日
