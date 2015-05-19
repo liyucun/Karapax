@@ -3,10 +3,7 @@
  */
 var express = require('express');
 var router = express.Router();
-var listing = require('../controllers/listing');
 
-
-var apt = require('../models/apartment').model;
 var aptSherbrooke = require('../models/sherbrooke');
 var aptAlex118 = require('../models/stalexandre118');
 var aptAlex220 = require('../models/stalexandre220');
@@ -18,15 +15,15 @@ router.get('/listing', function(req, res, next) {
     var id = req.query.id;
     var aptInfo;
     switch(id){
-        case '1' : aptInfo = new apt(aptSherbrooke);
+        case '1' : aptInfo = aptSherbrooke;
             break;
-        case '2': aptInfo = new apt(aptAlex118);
+        case '2': aptInfo = aptAlex118;
             break;
-        case '3': aptInfo = new apt(aptAlex220);
+        case '3': aptInfo = aptAlex220;
             break;
-        case '4': aptInfo = new apt(aptBishop);
+        case '4': aptInfo = aptBishop;
             break;
-        default : aptInfo = new apt(aptYouville);
+        default : aptInfo = aptYouville;
             break;
     }
     res.render('listing',aptInfo);
