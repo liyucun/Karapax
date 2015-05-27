@@ -1,0 +1,194 @@
+//
+   Created by Mia on 2015-05-21.
+extends layout
+// call the karapax_list.css
+block extraHeader
+   link(rel='stylesheet', href='/stylesheets/karapax_list.css')
+block content
+   include includes/navbar
+
+   section#filter
+      .filter-header.navbar.navbar-default.navbar-fixed-top
+         .container
+            .navbar-header
+               .navbar-brand Selected Filters
+            ul.nav.navbar-nav
+               li.btn-defualt.filter-tag.inline-space Date
+                  i.fa.fa-close
+               li.btn-defualt.filter-tag.inline-space Price
+                  i.fa.fa-close
+               li.btn-defualt.filter-tag.inline-space Area
+                  i.fa.fa-close
+               li.btn-defualt.filter-tag.inline-space Apartment Type
+                  i.fa.fa-close
+      .container
+         form.form-horizontal(role='form')
+            .form-group.inline-group
+               label.control-label.col-md-2.col-sm-2.col-xs-5.row-space Date
+               .col-md-3.col-sm-3.col-xs-7.row-space
+                  if filterDate
+                     input.form-control(type='date', placeholder='Rent Date' text='#{filterDate}')#date
+                  else
+                     input.form-control(type='date', placeholder='Rent Date')#date
+               label.control-label.col-md-2.col-sm-2.col-xs-5.row-space Price
+               .col-md-2.col-sm-2.col-xs-3.row-space
+                  if filterPrice1
+                     input.form-control#price1(text='filterPrice1')
+                  else
+                     input.form-control#price1
+               label.text-center.norrow-width.row-space --
+               .col-md-2.col-sm-2.col-xs-3.row-space
+                  if filterPrice2
+                     input.form-control#price2(text='filterPrice2')
+                  else
+                     input.form-control#price2
+            .form-group
+               label.control-label.col-md-2.col-sm-3.col-xs-5 Area
+               .col-md-10.col-sm-9.col-xs-7
+                  .checkbox
+                     label.inline-space
+                        if '市中心' in filterArea
+                           input(type='checkbox', checked)#area-dt
+                           | 市中心
+                        else
+                           input(type='checkbox')#area-dt
+                           | 市中心
+                     label.inline-space
+                        if 'CDN' in filterArea
+                           input(type='checkbox', checked)#area-cdn
+                           | CDN
+                        else
+                           input(type='checkbox')#area-cdn
+                           | CDN
+                     label.inline-space
+                        if 'NDG' in filterArea
+                           input(type='checkbox', checked)#area-ndg
+                           | NDG
+                        else
+                           input(type='checkbox')#area-ndg
+                           | NDG
+                     label.inline-space
+                        if 'Monk' in filterArea
+                           input(type='checkbox', checked)#area-monk
+                           | Monk
+                        else
+                           input(type='checkbox')#area-monk
+                           | Monk
+                     label.inline-space
+                        if 'French' in filterArea
+                           input(type='checkbox', checked)#area-french
+                           | French
+                        else
+                           input(type='checkbox')#area-french
+                           | French
+            .form-group
+               label.control-label.col-md-2.col-sm-3.col-xs-5 Apartment Type
+               .col-md-10.col-sm-9.col-xs-7
+                  .checkbox
+                     label.inline-space
+                        if 'Studio' in filterType
+                           input(type='checkbox', checked)#type-1
+                           |Studio
+                        else
+                           input(type='checkbox')#type-1
+                           | Studio
+                     label.inline-space
+                        if '2 1/2' in filterType
+                           input(type='checkbox', checked)#type-2
+                           | 2 1/2
+                        else
+                           input(type='checkbox')#type-2
+                           | 2 1/2
+                     label.inline-space
+                        if '3 1/2' in filterType
+                           input(type='checkbox', checked)#type-3
+                           | 3 1/2
+                        else
+                           input(type='checkbox')#type-3
+                           | 3 1/2
+                     label.inline-space
+                        if '4 1/2' in filterType
+                           input(type='checkbox', checked)#type-4
+                           | 4 1/2
+                        else
+                           input(type='checkbox')#type-4
+                           | 4 1/2
+                     label.inline-space
+                        if '5 1/2' in filterType
+                           input(type='checkbox', checked)#type-5
+                           | 5 1/2
+                        else
+                           input(type='checkbox')#type-5
+                           | 5 1/2
+                     label.inline-space
+                        if 'Entire' in filterType
+                           input(type='checkbox', checked)#type-entire
+                           | Entire apartment
+                        else
+                           input(type='checkbox')#type-entire
+                           | Entire apartment
+                     label.inline-space
+                        if 'private' in filterType
+                           input(type='checkbox', checked)#type-private
+                           | Private Room
+                        else
+                           input(type='checkbox')#type-private
+                           | Private Room
+                     label.inline-space
+                        if 'living' in filterType
+                           input(type='checkbox', checked)#type-living
+                           | Living Room
+                        else
+                           input(type='checkbox')#type-living
+                           | Living Room
+            .form-group
+               label.control-label.col-md-2.col-sm-3.col-xs-5 Sort by
+               .col-md-10.col-sm-9.col-xs-7
+                  .radio
+                     label.inline-space
+                        if filterSort!='priceLow'&& filterSort!=null
+                           input(type='radio', name='sortBtn')#sort-pl
+                           | price : Low to Hight
+                        else
+                           input(type='radio', name='sortBtn', checked)#sort-pl
+                           | price : Low to Hight
+                     label.inline-space
+                        if filterSort=='priceHigh'
+                           input(type='radio', name='sortBtn', checked)#sort-ph
+                           | price : High to Low
+                        else
+                           input(type='radio', name='sortBtn')#sort-ph
+                           | price : High to Low
+                     label.inline-space
+                        if filterSort=='viewer'
+                           input(type='radio', name='sortBtn', checked)#sort-v
+                           | viewer
+                        else
+                           input(type='radio', name='sortBtn')#sort-v
+                           | viewer
+            .form-group
+               .col-md-6.col-sm-6.col-xs-6.col-md-offset-3.col-sm-offset-3.col-xs-offset-3
+                  a.btn.btn-danger(onclick='findWithFilters(1)') Find
+   section#apartments
+      .container
+         .row.text-center.row-space
+            for apt in aptList
+               .col-md-4.col-sm-6.col-xs-12
+                  .apt-image
+                     a(href='./listing?id=#{apt._id}')
+                        img.img-responsive(src='images/#{apt.imgPath[0]}', alt='').image-height
+                        .price-image
+                           span.h6.price-span-top $
+                           span.h4 #{apt.price.eight}
+                           span.h6.price-span-top CAD
+         .row.row-space
+            .col-md-12.col-sm-12.col-xs-12
+               ul.pager
+                  li
+                     if page>1
+                        a(href='#') 1
+                     else
+                        a#pager-active 1
+// load karapax js
+block extraScript
+   script( src='/javascripts/karapax_list.js' )

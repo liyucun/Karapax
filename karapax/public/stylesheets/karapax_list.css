@@ -1,0 +1,158 @@
+/*==========================================================*/
+/*================= BOOTSTRAP OVERIDE ======================*/
+/*==========================================================*/
+
+#site-header .navbar-default {
+    border-color: #2D3037;
+    background: #2D3037;
+    border-radius: 0;
+}
+
+#site-header a{
+    color: white;
+}
+
+.pager li{
+    padding: 5px;
+}
+
+.pager li> a{
+    border-color: #d9534f;
+    color: #d9534f;
+}
+
+.pager #pager-active{
+    background-color: #d9534f;
+    color: #ffffff;
+}
+
+#filter .btn{
+    width : 100%
+}
+
+#filter .navbar-header{
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#filter .navbar-nav{
+    float: left;
+    margin: 0;
+}
+
+#filter .navbar-nav> li{
+    float: left;
+}
+/*==========================================================*/
+/*========================== FILTER ========================*/
+/*==========================================================*/
+
+#filter .filter-header{
+    margin-top: 45px;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+#filter{
+    padding-top: 110px;
+    padding-bottom: 30px;
+}
+
+#filter .control-label{
+    text-align: right;
+}
+
+#filter .norrow-width{
+    padding-right: -5px;
+    padding-left: -5px;
+    width:5%;
+    float:left;
+}
+
+#filter .row-space{
+    margin-bottom: 15px;
+}
+
+#filter .inline-group{
+    margin-bottom: -15px;
+}
+
+#filter .inline-space{
+    margin-right: 25px;
+}
+
+#filter .filter-tag{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    font-size: 16px;
+}
+
+#filter li{
+    border:solid 1px #777777;
+}
+
+#filter .fa-close{
+    margin-left: 20px;
+}
+
+
+/*==========================================================*/
+/*======================== APARTMENTS ======================*/
+/*==========================================================*/
+#apartments {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+#apartments img:hover {
+    color: #ffffff;
+    opacity:0.6;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+#apartments .image-height{
+    width:100%;
+}
+
+#apartments .apt-image{
+    position:relative;
+    margin: 10px 0;
+}
+
+#apartments .price-image{
+    background-color: #565a5c;
+    color: white;
+    position:absolute;
+    left:0;
+    bottom: 0px;
+    padding: 7px 10px;
+}
+#apartments .price-span-top{
+    position: relative;
+    top: -0.5em;
+    padding: 2px;
+}
+
+#apartments #check-more{
+    width :50%;
+    margin:50px;
+}
+
+/*==========================================================*/
+/*========================= MEDIA ==========================*/
+/*==========================================================*/
+@media(min-width:992px) {
+    #apartments .image-height{
+        height: 270px;
+    }
+}
+
+@media (min-width:768px) {
+    #apartments .image-height{
+        height: 234px;
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "country" : "Canada",
+  "province" : "Quebec",
+  "city" : "Montreal",
+  "address" : "181 Place d’Youville",
+  "area" : "蒙特利尔老城区",
+  "zipcode" : "H2Y 2B2",
+  "price" : {"eight": 1800, "twelve": 1650},
+  "deposit" : {"eight": 1800, "twelve": 1650},
+  "avaDate" : "2015/09/01",
+  "typeDescription" : "两室一厅",
+  "type" : {"aptType":4, "rentType":1},
+  "size" : 0,
+  "bedrooms" : 2,
+  "bathrooms" : 1,
+  "description" : "它坐落于蒙特利尔老城区的一栋欧式建筑，你可以享受传统古老的欧式氛围与老城区独有的艺术情调。交通方便，步行能达各种餐饮，商店，画廊与地铁站。房间宽敞，采光好。",
+  "state" : 1,
+  "hasFurniture" : 1,
+  "requirements" : {
+    "pet" : 1,
+    "smoke" : 1
+  },
+  "viewer" : 0,
+  "imgPath" : ["181placedyouville300br1.jpg","181placedyouville300br2.jpg","181placedyouville300dd1.png","181placedyouville300hw1.png","181placedyouville300kc1.png"],
+  "around" : {
+    "school" : "",
+    "bus" : "55,715,129",
+    "metro" : "Place d’arms, Square Victoria",
+    "market" : "Provigo",
+    "restaurant" : "",
+    "bank" : "",
+    "entertainment" : "画廊，博物馆，老港，Notre-Dame Basilica 教堂",
+    "others" : ""
+  },
+  "furniture": {
+    "electrical": "电视",
+    "table": "茶几，餐桌，椅子，沙发",
+    "light": "台灯",
+    "bed": "沙发床，Queen Size大床2张",
+    "others": ""
+  },
+  "amenities" : {
+    "kitchen" : "整体厨房",
+    "indoor" : "壁炉",
+    "net" : "无线网",
+    "elevator" : "",
+    "entertainment" : "",
+    "parking" : "付费停车",
+    "others" : "洗衣机"
+  }
+}
+
+

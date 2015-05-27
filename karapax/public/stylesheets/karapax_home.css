@@ -1,4 +1,25 @@
 /*==========================================================*/
+/*================= BOOTSTRAP OVERIDE ======================*/
+/*==========================================================*/
+
+#site-header .navbar-default {
+    border-color: transparent;
+    background: transparent;
+    padding: 10px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+#site-header .top-nav-collapse{
+    background-color: #2D3037;
+    padding: 0;
+}
+
+#site-header a{
+    color: white;
+}
+
+/*==========================================================*/
 /*========================= BODY ===========================*/
 /*==========================================================*/
 
@@ -94,13 +115,17 @@ header .btn:hover {
     top: -0.5em;
     padding: 2px;
 }
+
+#apartments #check-more{
+    width :50%;
+    margin:50px;
+}
 /*==========================================================*/
 /*======================== GAP =============================*/
 /*==========================================================*/
 
 #gap {
     background-color:#2D3037;
-    height: 200px;
     text-align: center;
     padding: 40px;
     color: #ffffff;
@@ -112,12 +137,33 @@ header .btn:hover {
 
 #about {
     background-color:#fff;
-
 }
 
-/*h2 h4 p#about  {
-    text-align: center;
-}*/
+#about .about-span{
+    position: absolute;
+    left: 90px;
+    top: 0px;
+}
+
+#about .about-us-para{
+    position: relative;
+    top: -0.5em;
+}
+
+
+#about .about-pic{
+
+    height:70px;
+    width: 70px;
+}
+#about .about-us-font{
+    font-size: medium;
+}
+
+#about .bottom-space{
+    margin-bottom: 20px;
+}
+
 
 #about .space{
     padding: 10px 0;

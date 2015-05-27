@@ -1,0 +1,52 @@
+{
+  "country" : "Canada",
+  "province" : "Quebec",
+  "city" : "Montreal",
+  "address" : "2045 Bishop",
+  "area" : "市中心",
+  "zipcode" : "H3G 2E8",
+  "price" : {"eight": 1650, "twelve": 1500},
+  "deposit" : {"eight": 1650, "twelve": 1500},
+  "avaDate" : "2015/09/01",
+  "typeDescription" : "两室一厅",
+  "type" : {"aptType":4, "rentType":1},
+  "size" : 0,
+  "bedrooms" : 2,
+  "bathrooms" : 1,
+  "description" : "它位于市中心，附近餐饮商店琳琅满目。交通方便，步行可达康考迪亚大学，地铁站与车站。房间宽敞，采光好。",
+  "state" : 1,
+  "hasFurniture" : 1,
+  "requirements" : {
+    "pet" : 0,
+    "smoke" : 1
+  },
+  "viewer" : 0,
+  "imgPath" : ["2045bishop8br1.jpg","2045bishop8br2.jpg","2045bishop8dd1.jpg","2045bishop8kc1.jpg","2045bishop8ot1.jpg"],
+  "around" : {
+    "school" : "Concordia",
+    "bus" : "15, 24, 356",
+    "metro" : "Guy Concordia",
+    "market" : "Provigo",
+    "restaurant" : "",
+    "bank" : "",
+    "entertainment" : "Mont－Royale",
+    "others" : ""
+  },
+  "furniture": {
+    "electrical": "电视",
+    "table": "电视柜，茶几，餐桌，椅子",
+    "light": "台灯",
+    "bed": "沙发床，Queen Size大床2张",
+    "others": ""
+  },
+  "amenities" : {
+    "kitchen" : "整体厨房",
+    "indoor" : "",
+    "net" : "无线网",
+    "elevator" : "",
+    "entertainment" : "",
+    "parking" : "付费停车",
+    "others" : "洗衣机"
+  }
+}
+

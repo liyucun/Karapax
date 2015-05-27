@@ -1,0 +1,51 @@
+{
+  "country" : "Canada",
+  "province" : "Quebec",
+  "city" : "Montreal",
+  "address" : "Apt. 118, 1200 Rue St-Alenxandre",
+  "area" : "市中心",
+  "zipcode" : "H3T 1Z3",
+  "price" : {"eight": 1550, "twelve": 1400},
+  "deposit" : {"eight": 1550, "twelve": 1400},
+  "avaDate" : "2015/09/01",
+  "typeDescription" : "酒店式公寓，一室一厅",
+  "type" : {"aptType":3, "rentType":1},
+  "size" : 0,
+  "bedrooms" : 1,
+  "bathrooms" : 1,
+  "description" : "它位于市中心繁华地段，你可以轻松享受蒙特利尔的各种娱乐与节日的热闹氛围。这个现代化酒店式公寓内部设施齐全，健身房，游泳池，游戏室等多种设施供你选择。交通方便，步行可达麦基尔大学，地铁站与各种餐饮超市。房间宽敞，采光好，有独立阳台。",
+  "state" : 1,
+  "hasFurniture" : 1,
+  "requirements" : {
+    "pet" : 1,
+    "smoke" : 0
+  },
+  "viewer" : 0,
+  "imgPath" : ["1200stalexandre118br1.jpg","1200stalexandre118ba1.jpg","1200stalexandre118dd1.jpg","1200stalexandre118kc1.jpg","1200stalexandre118ot1.jpg"],
+  "around" : {
+    "school" : "McGill",
+    "bus" : "80, 129",
+    "metro" : "Place des arts",
+    "market" : "IGA",
+    "restaurant" : "",
+    "bank" : "",
+    "entertainment" : "",
+    "others" : ""
+  },
+  "furniture": {
+    "electrical": "电视，空调",
+    "table": "电视柜，茶几，餐桌，椅子",
+    "light": "落地灯",
+    "bed": "沙发床，Queen Size大床",
+    "others": ""
+  },
+  "amenities" : {
+    "kitchen" : "整体厨房",
+    "indoor" : "储物间",
+    "net" : "无线网",
+    "elevator" : "电梯",
+    "entertainment" : "健身房，游泳池，游戏室，桑拿房",
+    "parking" : "付费停车",
+    "others" : "洗衣机，干衣机"
+  }
+}

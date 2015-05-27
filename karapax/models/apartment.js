@@ -10,6 +10,8 @@ var Schema = mongoose.Schema;
 
 //Apt Schema
 var aptSchema = new Schema({
+    ownerId: String,
+    renterId: String,
     country: String,
     province: String,
     city: String,
@@ -17,10 +19,14 @@ var aptSchema = new Schema({
     zipcode: String,
     area: String,
     price: {eight: Number, twelve: Number},
-    deposit: Number,
+    deposit: {eight: Number, twelve: Number},
     avaDate: Date,
     size: Number,
-    type: String,
+    typeDescription: String,
+    type : {
+        aptType:Number,               //1:studio;2:2 1/2; 3: 3 1/2; 4: 4 1/2; 5: 5 1/2; 6: others
+        rentType: Number              //1:Entire Room; 2: Private Room; 3: Living Room
+    },
     bedrooms: Number,
     bathrooms: Number,
     description: String,

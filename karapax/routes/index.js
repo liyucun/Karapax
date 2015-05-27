@@ -1,13 +1,15 @@
 var express = require('express');
 var router = express.Router();
 
+var aptList = require('../controllers/listing');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Karapax' });
+  aptList.getAptListForIndex(req,res,next);
 });
 
 router.get('/career', function(req, res, next) {
-  res.render('career', { title: 'Karapax'});
+  res.render('career');
 });
 
 

@@ -43,4 +43,3 @@ $("#how-it-works-btn").click(function(){
     $("#how-it-works").removeClass("hide");
 })
 */
-

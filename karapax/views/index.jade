@@ -41,73 +41,35 @@ block content
                 .col-lg-8.col-lg-offset-2.apartments-section-heading
                     h2 我们的公寓
             .row.text-center
-                .col-md-4.col-sm-6.col-xs-12
-                    .apt-image
-                        img.img-responsive(src='images/181placedyouville300br1.jpg', alt='').image-height
-                        .price-image
-                            span.h6.price-span-top $
-                            span.h4 1650
-                            span.h6.price-span-top CAD
-
-                .col-md-4.col-sm-6.col-xs-12
-                    .apt-image
-                        img.img-responsive(src='images/181placedyouville300br2.jpg', alt='').image-height
-                        .price-image
-                            span.h6.price-span-top $
-                            span.h4 1650
-                            span.h6.price-span-top CAD
-
-                .col-md-4.col-sm-6.col-xs-12
-                    .apt-image
-                        img.img-responsive(src='images/400sherbrooke1612br1.jpg', alt='').image-height
-                        .price-image
-                            span.h6.price-span-top $
-                            span.h4 1650
-                            span.h6.price-span-top CAD
-                .col-md-4.col-sm-6.col-xs-12
-                    .apt-image
-                        img.img-responsive(src='images/1200stalexandre118br1.jpg', alt='').image-height
-                        .price-image
-                            span.h6.price-span-top $
-                            span.h4 1650
-                            span.h6.price-span-top CAD
-
-                .col-md-4.col-sm-6.col-xs-12
-                    .apt-image
-                        img.img-responsive(src='images/1200stalexandre200br1.jpg', alt='').image-height
-                        .price-image
-                            span.h6.price-span-top $
-                            span.h4 1650
-                            span.h6.price-span-top CAD
-
-                .col-md-4.col-sm-6.col-xs-12
-                    .apt-image
-                        img.img-responsive(src='images/2045bishop8br1.jpg', alt='').image-height
-                        .price-image
-                            span.h6.price-span-top $
-                            span.h4 1650
-                            span.h6.price-span-top CAD
-
-
-    // controling the fade out animation when click on an image
-    #apartment-pic-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='apartment-pic-ModalLabel', aria-hidden='true')
-        .modal-dialog
-            .modal-body
-                img.img-responsive#apartments-img(src='', alt="image")
-
-    //useless section
+                for apt in apts
+                    .col-md-4.col-sm-6.col-xs-12
+                        .apt-image
+                            a(href='./listing?id=#{apt._id}')
+                                img.img-responsive(src='images/#{apt.imgPath[0]}', alt='').image-height
+                                .price-image
+                                    span.h6.price-span-top $
+                                    span.h4 #{apt.price.eight}
+                                    span.h6.price-span-top CAD
+                else
+                    .col-md-12.col-sm-6
+                        p Sorry! Something is wrong!
+            .row
+                .col-md-12.text-center
+                    a.btn.btn-danger.btn-lg(href='./aptlist')#check-more 查看更多
+    //slogan section
     section#gap
         .container
             .row
-                h1 Welcome to our amazing Karapax!
-                h3 Vision v0.1
+                h3 还没“安家落户”？寻寻觅觅，都不合适？发愁置办家装？
+                h1 Karapax，多种租房方式，你的房子你做主！
+
 
     //About us section
     section#about
         .container
             .row.space
                 .col-md-12
-                    h2 关于我们
+                    h2.text-center 关于我们
             .row.space
                 .col-md-12
                     p.
@@ -115,13 +77,27 @@ block content
                         无论你在国内还是国外，一切繁琐的租房程序由我们承担。以可靠的房源，多样的租房选择，人性化的网站，
                         我们致力于为用户打造最便捷称心的租住体验。
             .row.space
-                .col-md-12
-                    p 我们承诺：
-                    ul.list-unstyled
-                        li 安心：以万分承诺，慎选房源，免除你的后顾之忧。
-                        li 精心：以千条标准，精挑细选，找到你心目中的家。
-                        li 省心：从找房到入住，你的工作，我们完成。
-                        li 称心：地点？环境？家具？设施？你的需求，我们满足。
+                .col-md-6.col-sm-12
+                    img(src='images/about.png', alt='').about-pic
+                    .about-span
+                        p.h3.about-us-para 安心
+                        p.h6.about-us-para 以万分承诺，慎选房源，免除你的后顾之忧
+                .col-md-6.col-sm-12
+                    img(src='images/about.png', alt='').about-pic
+                    .about-span
+                        p.h3.about-us-para 精心
+                        p.h6.about-us-para 以千条标准，精挑细选，找到你心目中的家
+                .col-md-6.col-sm-12
+                    img(src='images/about.png', alt='').about-pic
+                    .about-span
+                        p.h3.about-us-para 省心
+                        p.h6.about-us-para 从找房到入住，你的工作，我们完成
+                .col-md-6.col-sm-12
+                    img(src='images/about.png', alt='').about-pic
+                    .about-span
+                        p.h3.about-us-para 称心
+                        p.h6.about-us-para 地点？环境？家具？设施？你的需求，我们满足.
+
 // load karapax js
 block extraScript
     script( src='/javascripts/karapax_home.js' )
